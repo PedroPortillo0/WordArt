@@ -1,0 +1,29 @@
+.padre{
+    width: 100% ;
+    display: flex;
+    /* align-content: center; */
+  
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 10%;
+  border: 5px solid red;
+   
+   padding:  20% 0% 0% 0%;
+}
+.hijo1{
+
+    width: 80%;
+    border: 2px solid blue;
+    
+   
+ 
+  }
+
+.hijo2{
+    border: 2px solid;
+    background: linear-gradient(90deg, rgba(48, 191, 206, 0.8) 0.29%, rgba(48, 191, 206, 0.6) 50.52%, rgba(48, 191, 206, 0.5) 100%);
+   width: 50%;
+   border: 2px solid green;
+   
+}
+

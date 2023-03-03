@@ -1,0 +1,11 @@
+.sections{
+    transition: .5s;
+    width: auto;
+}
+.sections:hover{
+    background-color: rgba(126, 46, 175, 0.2);
+}
+
+a{
+    padding: 20px;
+}
