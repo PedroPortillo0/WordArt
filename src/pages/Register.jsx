@@ -1,8 +1,9 @@
-import ForRegister from '../components/organism/FormRegister';
+import FormRegister from "../components/organism/FormRegister";
+
 function Register() {
-    return (  
-        <ForRegister/>
-    );
+    return ( 
+        <FormRegister/>
+     );
 }
 
 export default Register;
