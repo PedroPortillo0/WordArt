@@ -3,6 +3,7 @@ import NotFound from '../pages/NotFound'
 import LandingPage from "../pages/LandingPage";
 import RecuperarContraseña from '../pages/RecuperarContraseña';
 import Register from '../pages/Register';
+import Login from '../pages/Login';
 
 function App() {
     return ( 
@@ -10,6 +11,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage/>} />
                 <Route path="/registrarse" element={<Register/>}/>
+                <Route path="/inicioSesion" element={<Login/>}/>
                 <Route path="/recuperarContraseña" element={<RecuperarContraseña/>} />
                 <Route path="/*" element={<NotFound/>} />
             </Routes>
