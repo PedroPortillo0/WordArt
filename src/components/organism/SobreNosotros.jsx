@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import Label from "../atoms/LabelHeader";
 import SorJuanaAtom from "../atoms/SorJuanaSobreNosotros";
 import SobreNosotrosMol from "../molecules/SobreNosostrosMol";
 
 const StyleSobreNosotros = styled.div`
-    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
-    justify-content: center;
+`;
+
+const StyleCentrar = styled.div`
+    width: 100%;
+    padding: 11% 0;
 `;
 
 const StyleDiv = styled.div`
@@ -22,13 +27,11 @@ const StyleDivTitle = styled.div`
 `;
 
 const StyleH2 = styled.h2`
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
     font-family: 'Comfortaa', cursive;
     font-style: bold;
 `;
 
 const StyleSpan = styled.span`
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
     font-family: 'Comfortaa', cursive;
     font-style: bold;
     font-size:25px;
@@ -38,14 +41,16 @@ const StyleSpan = styled.span`
 
 function SobreNosotros() {
     return ( 
-        <StyleSobreNosotros>
-            <StyleDivTitle>
-                <StyleH2>Sobre</StyleH2><StyleSpan>Nosotros</StyleSpan>
-            </StyleDivTitle>
-            <StyleDiv>
-                <SorJuanaAtom/>
-                <SobreNosotrosMol/>
-            </StyleDiv>
+        <StyleSobreNosotros id="1">
+            <StyleCentrar>
+                <StyleDivTitle>
+                    <StyleH2>Sobre</StyleH2><StyleSpan>Nosotros</StyleSpan>
+                </StyleDivTitle>
+                <StyleDiv>
+                    <SorJuanaAtom/>
+                    <SobreNosotrosMol/>
+                </StyleDiv>
+            </StyleCentrar>
         </StyleSobreNosotros>
      );
 }

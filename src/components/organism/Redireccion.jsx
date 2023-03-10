@@ -1,19 +1,19 @@
-import StyleDiv from '../atoms/ButtonRedireccion'
+import { Link } from 'react-router-dom';
 
-import styled from 'styled-components';
+import WrapperLabelHeader from '../molecules/WrapperLabelHeader';
 
-const StyleRedireccion = styled.div`
-    margin-top: 12%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-`;
+import '../../assets/styles/PiePagina.css'
+
 
 function Redireccion() {
     return ( 
-        <StyleRedireccion>
-            <StyleDiv/>
-        </StyleRedireccion>
+        <Link to="/*" className='Redireccion'>
+            <div className='redireccion'>
+                <div className='title-redireccion'>
+                    <WrapperLabelHeader  msg="Conoce más"/>
+                </div>
+            </div>
+        </Link>
      );
 }
 

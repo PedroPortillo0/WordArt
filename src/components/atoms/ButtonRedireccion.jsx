@@ -21,9 +21,8 @@ const StyleDiv2 = styled.div`
 
 function ButtonRedireccion() {
     return (
-    <StyleDiv>
-        <StyleDiv2>Conoce más</StyleDiv2>
-    </StyleDiv> );
+        
+    )
 }
 
 export default ButtonRedireccion;

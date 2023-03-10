@@ -1,11 +1,36 @@
 import styled from "styled-components";
 
-import Battle from '../../assets/img/battle.svg'
-import Eyes from '../../assets/img/eyes.svg'
-import GuitarLarge from '../../assets/img/guitar-large.svg'
-import Guitar from '../../assets/img/guitar.svg'
-import HumansLarge from '../../assets/img/humans-large.svg'
-import Humans from '../../assets/img/humans.svg'
+import slider1 from '../../assets/img/slider1-1.svg';
+import slider2 from '../../assets/img/slider1-2.svg';
+import slider3 from '../../assets/img/slider1-3.svg';
+import slider4 from '../../assets/img/slider1-4.svg';
+
+import slider21 from '../../assets/img/slider2-1.svg';
+import slider22 from '../../assets/img/slider2-2.svg';
+import slider23 from '../../assets/img/slider2-3.svg';
+import slider24 from '../../assets/img/slider2-4.svg';
+
+import slider31 from '../../assets/img/slider3-1.svg';
+import slider32 from '../../assets/img/slider3-2.svg';
+import slider33 from '../../assets/img/slider3-3.svg';
+import slider34 from '../../assets/img/slider3-4.svg';
+
+import slider41 from '../../assets/img/slider4-1.svg';
+import slider42 from '../../assets/img/slider4-2.svg';
+import slider43 from '../../assets/img/slider4-3.svg';
+import slider44 from '../../assets/img/slider4-4.svg';
+
+import slider51 from '../../assets/img/slider5-1.svg';
+import slider52 from '../../assets/img/slider5-2.svg';
+import slider53 from '../../assets/img/slider5-3.svg';
+import slider54 from '../../assets/img/slider5-4.svg';
+
+import slider61 from '../../assets/img/slider6-1.svg'
+import slider62 from '../../assets/img/slider6-2.svg'
+import slider63 from '../../assets/img/slider6-3.svg'
+import slider64 from '../../assets/img/slider6-4.svg'
+
+import '../../assets/styles/CarruselImgLandingPage.css'
 
 const StyleContainerImages = styled.div`
     display: flex;
@@ -17,22 +42,75 @@ const StyleImg = styled.img`
     padding: 2px 10px;
 `;
 
+const StyleCon2Div = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`;
+
+const StyleCon3Div = styled.div`
+    width: 100%;
+    display: flex;
+`;
+
 function CarruseImgMol() {
     return ( 
     <StyleContainerImages>
-        <div>
-            <StyleImg src={Humans}/>
+        <div className="slider1">
+            <ul>
+                <li><StyleImg src={slider1}/></li>
+                <li><StyleImg src={slider3}/></li>
+                <li><StyleImg src={slider2}/></li>
+                <li><StyleImg src={slider4}/></li>
+            </ul>
         </div>
-        <div>
-            <div>
-                <StyleImg src={Battle}/>
-                <StyleImg src={GuitarLarge}/>
-            </div>
-            <div>
-                <StyleImg src={Guitar}/>
-                <StyleImg src={Eyes}/>
-                <StyleImg src={HumansLarge}/>
-            </div>
+
+        <div className="container20">
+            <StyleCon2Div>
+                <div className="slider2">
+                    <ul>
+                        <li><StyleImg src={slider21}/></li>
+                        <li><StyleImg src={slider22}/></li>
+                        <li><StyleImg src={slider23}/></li>
+                        <li><StyleImg src={slider24}/></li>
+                    </ul>
+                </div>
+                <div className="slider3">
+                    <ul>
+                        <li><StyleImg src={slider31}/></li>
+                        <li><StyleImg src={slider32}/></li>
+                        <li><StyleImg src={slider33}/></li>
+                        <li><StyleImg src={slider34}/></li>
+                    </ul>
+                </div>
+            </StyleCon2Div>
+
+            <StyleCon3Div>
+                <div className="slider4">
+                    <ul>
+                        <li><StyleImg src={slider42}/></li>
+                        <li><StyleImg src={slider43}/></li>
+                        <li><StyleImg src={slider44}/></li>
+                        <li><StyleImg src={slider41}/></li>
+                    </ul>
+                </div>
+                <div className="slider5">
+                    <ul>
+                        <li><StyleImg src={slider51}/></li>
+                        <li><StyleImg src={slider52}/></li>
+                        <li><StyleImg src={slider53}/></li>
+                        <li><StyleImg src={slider54}/></li>
+                    </ul>
+                </div>
+                <div className="slider6">
+                    <ul>
+                        <li><StyleImg src={slider63}/></li>
+                        <li><StyleImg src={slider61}/></li>
+                        <li><StyleImg src={slider62}/></li>
+                        <li><StyleImg src={slider64}/></li>
+                    </ul>
+                </div>
+            </StyleCon3Div>
         </div>
     </StyleContainerImages> );
 }

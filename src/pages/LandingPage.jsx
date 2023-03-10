@@ -5,7 +5,7 @@ import '../assets/styles/LandingPage.css'
 import styled from 'styled-components'
 import CarruseImg from '../components/organism/CarruseImg'
 import SobreNosotros from '../components/organism/SobreNosotros';
-import Oferta from '../components/organism/Oferta'
+import Servicios from '../components/organism/Servicios'
 import Cards from '../components/organism/Cards'
 import Redireccion from '../components/organism/Redireccion'
 import PiePagina from '../components/organism/PiePagina'
@@ -25,7 +25,7 @@ function LandingPage() {
             <Header/>
             <CarruseImg/>
             <SobreNosotros/>
-            <Oferta/>
+            <Servicios/>
             <Cards/>
             <Redireccion/>
             <PiePagina/>

@@ -48,9 +48,9 @@ function GroupInputs() {
         //padre
         <StyledContainer>
             <StyledInputGroup >
-                <WrapperlInput msn="correo:" type="text"/>
-                <WrapperlInput msn="contraseña:" type="text"/>
-                <Button>H0Oola</Button>
+                <WrapperlInput msn="correo:" type="email"/>
+                <WrapperlInput msn="contraseña:" type="password"/>
+                <Button>Iniciar Sesión</Button>
             </StyledInputGroup >
 
             <StyledContainer2>

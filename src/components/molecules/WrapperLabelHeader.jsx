@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Label from "../atoms/LabelHeader";
 
 function WrapperLabelHeader({msg}) {

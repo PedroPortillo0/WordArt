@@ -1,13 +1,11 @@
-import LogoOF from '../../assets/img/Logo.svg'
-import styled from 'styled-components';
+import LogoOF from '../../assets/img/Logo.webp'
 
-const StyleLogo = styled.img`
-    width:10%;
-`;
+import '../../assets/styles/Header.css'
+
 
 function Logo() {
     return ( 
-            <StyleLogo src={LogoOF}/>
+            <img className='logo' src={LogoOF}/>
      );
 }
 

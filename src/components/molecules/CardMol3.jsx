@@ -17,7 +17,7 @@ const StyleContainerCard = styled.div`
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(9, 31, 132, 0.7) 0%, rgba(161, 76, 247, 0.1) 100%);
+    background: linear-gradient(180deg, rgba(154, 210, 139, 0.7) 0%, rgba(154, 210, 139, 0.1) 100%);
     border-radius: 20px;    
     margin-right: 7%;
     margin-top: 12%;

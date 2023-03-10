@@ -12,32 +12,33 @@ import WapperInput from '../molecules/WrapperInputRegister';
 import estatua from '../../assets/img/estatua.png'
 
 
-const StyledDivPadre = styled.div`
+const StyledDivPadre01 = styled.div`
     width: 100%;
     height:100vh;
     display: flex;
     align-items: center;
     align-content: center;
+    border: 2px solid red;
     /* flex-direction: column; */
     
 `
-const StyledDivHijo1 = styled.image`
+const StyledDivHijo02 = styled.image`
     width: 70%;
     height:100%;
     flex-direction: column;
-    /* background-color: black; */
-    /* background-image: url(image.png); */
+    border: 2px solid yellow;
     background-image: url('https://images.unsplash.com/photo-1548811579-017cf2a4268b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80');
     
 `
-const StyledDivHijo2 = styled.div`
+const StyledDivHijo03 = styled.div`
     width: 30%;
     height:100vh;
     flex-direction: column;
+    border: 2px solid blue;
     background: linear-gradient(90deg, rgba(48, 191, 206, 0.8) 0.29%, rgba(48, 191, 206, 0.6) 50.52%, rgba(48, 191, 206, 0.5) 100%);
 `
-const StyledDivHijo3 = styled.div`
-    position: absolute; 
+const StyledDivHijo04 = styled.div`
+    /* position: absolute;  */
     width: 80%;
     height: 80%;
     left: 100px; 
@@ -48,8 +49,8 @@ const StyledDivHijo3 = styled.div`
     border-radius: 10px;
     box-sizing: border-box;
 `
-const StyledDivHijo4 = styled.div`
-    position: absolute;
+const StyledDivHijo05 = styled.div`
+    /* position: absolute; */
     background-color: #ffffff;
     width: 40%;
     height: 80%;
@@ -67,20 +68,20 @@ const StyledDivHijo4 = styled.div`
 
 function FormRegister() {
     return ( 
-        <StyledDivPadre>
-            <StyledDivHijo1>
+        <StyledDivPadre01>
+            <StyledDivHijo02>
                
-            </StyledDivHijo1>
+            </StyledDivHijo02>
 
-            <StyledDivHijo2>
+            <StyledDivHijo03>
 
-            </StyledDivHijo2>
+            </StyledDivHijo03>
 
-            <StyledDivHijo3>
+            <StyledDivHijo04>
 
-            </StyledDivHijo3>
+            </StyledDivHijo04>
 
-            <StyledDivHijo4>
+            <StyledDivHijo05>
                 <div>
                     <img src={Logo} alt="" />
                     <Title>Registrarse</Title>
@@ -94,9 +95,9 @@ function FormRegister() {
                 </div>
                 
 
-            </StyledDivHijo4>
+            </StyledDivHijo05>
 
-        </StyledDivPadre>
+        </StyledDivPadre01>
      );
 }
 export default FormRegister;

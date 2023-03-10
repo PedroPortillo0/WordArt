@@ -3,6 +3,8 @@ import Linea from "../atoms/Linea";
 import Contacto from "../molecules/Contacto";
 import styled from "styled-components";
 
+import '../../assets/styles/PiePagina.css';
+
 const StyleDiv = styled.div`
     height: 300px;
     display: flex;
@@ -12,7 +14,7 @@ const StyleDiv = styled.div`
 
 function PiePagina() {
     return ( 
-    <StyleDiv>
+    <StyleDiv className="PiePagina" id="3">
         <SobreNostrosPie/>
         <Linea/>
         <Contacto/>
