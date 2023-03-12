@@ -1,8 +1,10 @@
-import GroupInputs from "../components/organism/GroupInputsLogin";
+import OrgLogin from "../components/organism/OrgLogin";
+
+import '../assets/styles/Login.css'
 
 function Login() {
     return (  
-     <GroupInputs/>
+     <OrgLogin/>
     );
 }
 

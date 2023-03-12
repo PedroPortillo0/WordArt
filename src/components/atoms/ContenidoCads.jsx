@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 const StyleConCards = styled.div`
+    position: relative;
+    background-color: #ffffff;
     padding: 7px 18px;
     text-align: justify;
     font-family: 'Comfortaa', cursive;
     font-size: 14px;
+    text-align: center;
 `;
 
 const StyleH2 = styled.h2`

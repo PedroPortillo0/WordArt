@@ -14,7 +14,7 @@ const  StyleHeaderBackgroundIMG = styled.img`
     width:100%;
     display: inline-block;
     text-align: center;
-    
+    position: static;
 `;
 
 

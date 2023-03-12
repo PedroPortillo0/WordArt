@@ -1,0 +1,46 @@
+.info{
+    margin-top: -10%;
+    transition: 1s;
+}
+
+
+.card{
+    position: static;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 240px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(1.4);
+    position: sticky;
+}
+
+.contenedor:hover > .info{
+    margin-top: -13%;
+}
+.contenedor:hover > .card{
+    transform: scale(1.03);
+}
+
+.contenedor{
+    overflow: hidden;
+    width: 329px;
+    height: 467px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.543);
+    border-radius: 20px;
+    margin-right: 7%;
+    margin-top: 10%;
+    transition: .5s;
+}
+.contenedor:hover{
+    transform: scale(1.01);
+}
+.sliderUp{
+    background: linear-gradient(180deg, #B6FFAA 0%, #FCFFFC 100%);
+}
+.sliderUp2{
+    background: linear-gradient(180deg, rgb(117, 215, 240) 0%, rgb(255, 255, 255) 100%);
+}

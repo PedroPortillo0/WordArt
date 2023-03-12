@@ -1,0 +1,53 @@
+
+.imgServicios{
+    width:40%;
+    position: static;
+    margin-left: -110%;
+    margin-top: -50%;
+}
+.titleServicios{
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #FAA41B;
+}
+.pServicios{
+    font-family: 'Comic Neue', cursive;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-top:1%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+    .imgServicios{
+        width:25%;
+        position: absolute;
+        margin-left: -60%;
+        margin-top: -40%;
+    }
+    .titleServicios{
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        color: #FAA41B;
+    }
+    .pServicios{
+        font-family: 'Comic Neue', cursive;;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        margin-top:1%;
+    }
+}

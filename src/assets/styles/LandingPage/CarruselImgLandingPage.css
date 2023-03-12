@@ -1,3 +1,19 @@
+@media screen and  (min-width: 1024px) and (max-width: 1300px) {
+    .slider1{
+        width: 22.9%;
+        height: 30%;
+        overflow: hidden;
+    }
+    .carruselImg{
+ 
+        padding: 2px 10px;
+    }
+}
+
+.carruselImg{
+    padding: 2px 10px;
+}
+
 .container20{
     width: 70%;
     height: 100%;
@@ -11,7 +27,6 @@
     width: 22.9%;
     height: 30%;
     overflow: hidden;
-
 }
 .slider1 ul{
     display: flex;

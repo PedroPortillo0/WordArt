@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import '../../assets/styles/Header.css';
+import '../../assets/styles/LandingPage/Header.css';
 
 const StyleLabel = styled.label`
     color: white;

@@ -16,7 +16,6 @@ const StyleCards2 = styled.div`
 `;
 
 const StyleCardsContainer = styled.div`
-    position: static;
     margin-top: -15%;
     align-items: center;
     justify-content: center;

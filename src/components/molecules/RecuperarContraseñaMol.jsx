@@ -1,4 +1,4 @@
-import Logo1 from '../../assets/img/Logo.svg'
+import Logo1 from '../../assets/img/Logo.webp'
 import Huella from '../../assets/img/Huella.svg'
 
 

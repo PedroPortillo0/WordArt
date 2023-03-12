@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ApartadoPie from '../atoms/ApartadoPie';
-import Logo from '../../assets/img/Logo.svg'
+import Logo from '../../assets/img/Logo.webp'
 
 const StyleDivContainer = styled.div`
     display: flex;
@@ -9,7 +9,8 @@ const StyleDivContainer = styled.div`
 `;
 
 const StyleImg = styled.img`
-    width: 30%;
+    width: 40%;
+    height: 40%;
 `;
 
 const StyleH4 = styled.h4`

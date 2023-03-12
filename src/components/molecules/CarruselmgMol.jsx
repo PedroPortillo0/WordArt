@@ -30,16 +30,13 @@ import slider62 from '../../assets/img/slider6-2.svg'
 import slider63 from '../../assets/img/slider6-3.svg'
 import slider64 from '../../assets/img/slider6-4.svg'
 
-import '../../assets/styles/CarruselImgLandingPage.css'
+import '../../assets/styles/LandingPage/CarruselImgLandingPage.css'
 
 const StyleContainerImages = styled.div`
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-`;
-
-const StyleImg = styled.img`
-    padding: 2px 10px;
 `;
 
 const StyleCon2Div = styled.div`
@@ -58,10 +55,10 @@ function CarruseImgMol() {
     <StyleContainerImages>
         <div className="slider1">
             <ul>
-                <li><StyleImg src={slider1}/></li>
-                <li><StyleImg src={slider3}/></li>
-                <li><StyleImg src={slider2}/></li>
-                <li><StyleImg src={slider4}/></li>
+                <li><img className="carruselImg" src={slider1}/></li>
+                <li><img className="carruselImg" src={slider3}/></li>
+                <li><img className="carruselImg" src={slider2}/></li>
+                <li><img className="carruselImg" src={slider4}/></li>
             </ul>
         </div>
 
@@ -69,18 +66,18 @@ function CarruseImgMol() {
             <StyleCon2Div>
                 <div className="slider2">
                     <ul>
-                        <li><StyleImg src={slider21}/></li>
-                        <li><StyleImg src={slider22}/></li>
-                        <li><StyleImg src={slider23}/></li>
-                        <li><StyleImg src={slider24}/></li>
+                        <li><img className="carruselImg" src={slider21}/></li>
+                        <li><img className="carruselImg" src={slider22}/></li>
+                        <li><img className="carruselImg" src={slider23}/></li>
+                        <li><img className="carruselImg" src={slider24}/></li>
                     </ul>
                 </div>
                 <div className="slider3">
                     <ul>
-                        <li><StyleImg src={slider31}/></li>
-                        <li><StyleImg src={slider32}/></li>
-                        <li><StyleImg src={slider33}/></li>
-                        <li><StyleImg src={slider34}/></li>
+                        <li><img className="carruselImg" src={slider31}/></li>
+                        <li><img className="carruselImg" src={slider32}/></li>
+                        <li><img className="carruselImg" src={slider33}/></li>
+                        <li><img className="carruselImg" src={slider34}/></li>
                     </ul>
                 </div>
             </StyleCon2Div>
@@ -88,26 +85,26 @@ function CarruseImgMol() {
             <StyleCon3Div>
                 <div className="slider4">
                     <ul>
-                        <li><StyleImg src={slider42}/></li>
-                        <li><StyleImg src={slider43}/></li>
-                        <li><StyleImg src={slider44}/></li>
-                        <li><StyleImg src={slider41}/></li>
+                        <li><img className="carruselImg" src={slider42}/></li>
+                        <li><img className="carruselImg" src={slider43}/></li>
+                        <li><img className="carruselImg" src={slider44}/></li>
+                        <li><img className="carruselImg" src={slider41}/></li>
                     </ul>
                 </div>
                 <div className="slider5">
                     <ul>
-                        <li><StyleImg src={slider51}/></li>
-                        <li><StyleImg src={slider52}/></li>
-                        <li><StyleImg src={slider53}/></li>
-                        <li><StyleImg src={slider54}/></li>
+                        <li><img className="carruselImg" src={slider51}/></li>
+                        <li><img className="carruselImg" src={slider52}/></li>
+                        <li><img className="carruselImg" src={slider53}/></li>
+                        <li><img className="carruselImg" src={slider54}/></li>
                     </ul>
                 </div>
                 <div className="slider6">
                     <ul>
-                        <li><StyleImg src={slider63}/></li>
-                        <li><StyleImg src={slider61}/></li>
-                        <li><StyleImg src={slider62}/></li>
-                        <li><StyleImg src={slider64}/></li>
+                        <li><img className="carruselImg" src={slider63}/></li>
+                        <li><img className="carruselImg" src={slider61}/></li>
+                        <li><img className="carruselImg" src={slider62}/></li>
+                        <li><img className="carruselImg" src={slider64}/></li>
                     </ul>
                 </div>
             </StyleCon3Div>

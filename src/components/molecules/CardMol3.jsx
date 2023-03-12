@@ -1,53 +1,31 @@
-import ImgCard from "../atoms/ImgCard";
-import TitleCard from "../atoms/TitleCard";
-import LikeCard from '../atoms/LikeCard';
 import ImgCardCAtom from "../atoms/ImgCardCAtom";
 import ContenidoCards from "../atoms/ContenidoCads";
+import Slider from "../atoms/Slider";
 
-import Profile3 from '../../assets/img/profile3.svg';
-import LikeCard1 from '../../assets/img/like.svg';
-import CardPintura from '../../assets/img/card-pintura.svg';
+import information3 from '../../assets/img/information3.png'
 
 import styled from "styled-components";
+import '../../assets/styles/LandingPage/Cards.css'
 
 const StyleContainerCard = styled.div`
-    background-color: green;
+    overflow: hidden;
     width: 446px;
     height: 463px;  
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(154, 210, 139, 0.7) 0%, rgba(154, 210, 139, 0.1) 100%);
     border-radius: 20px;    
     margin-right: 7%;
     margin-top: 12%;
 `;
 
-const StyleDivHeader = styled.div`
-    display: flex;
-    padding: 20px 20px;
-`;
-
-const StyleDivHeaUni = styled.div`
-    display:flex;
-    text-align: center;
-    align-items: center;
-`;
 
 function CardMol3() {
     return (
-        <StyleContainerCard>
-            <StyleDivHeader>
-                <StyleDivHeaUni>
-                    <ImgCard src={Profile3}/>
-                    <TitleCard msg="Pintura"/>
-                </StyleDivHeaUni>
-                <LikeCard src={LikeCard1}/>
-            </StyleDivHeader>
-            <div>
-                <ImgCardCAtom src={CardPintura}/>
-            </div>
-            <div>
+        <StyleContainerCard className="contenedor">
+            <ImgCardCAtom src={information3}/>
+            <div className="info">
+            <Slider className="sliderUp2"/>
                 <ContenidoCards msgTitle="Pintura en acuarela" contenido="En este curso 
                 de acuarela aprenderás a utilizar las principales técnicas de pintura en 
                 acuarelas, para llevar a cabo la elaboración de una obra artística. 

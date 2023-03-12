@@ -1,16 +1,14 @@
-import ImgCard from "../atoms/ImgCard";
-import TitleCard from "../atoms/TitleCard";
-import LikeCard from '../atoms/LikeCard'
 import ImgCardCAtom from "../atoms/ImgCardCAtom";
 import ContenidoCards from "../atoms/ContenidoCads";
+import Slider from "../atoms/Slider";
 
-import Profile4 from '../../assets/img/profile4.svg';
-import LikeCard1 from '../../assets/img/like.svg';
-import CardDanza from '../../assets/img/card-danza.svg';
+import information4 from '../../assets/img/information4.png'
 
 import styled from "styled-components";
+import '../../assets/styles/LandingPage/Cards.css'
 
 const StyleContainerCard = styled.div`
+    overflow: hidden;
     width: 329px;
     height: 467px;
     background: #FFFFFF;
@@ -19,37 +17,17 @@ const StyleContainerCard = styled.div`
     margin-left: 7%;
 `;
 
-const StyleDivHeader = styled.div`
-    display:flex;
-    margin-top: 5%;
-    padding: 20px 20px;
-`;
-
-const StyleDiverHeaderUni = styled.div`
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 50%;
-`;
 
 function CardMol4() {
     return ( 
-    <StyleContainerCard>
-        <StyleDivHeader>
-            <StyleDiverHeaderUni>
-                <ImgCard src={Profile4}/>
-                <TitleCard msg="Danza"/>
-            </StyleDiverHeaderUni>
-            <LikeCard src={LikeCard1}/>
-        </StyleDivHeader>
-        <div>
-            <ImgCardCAtom src={CardDanza}/>
-        </div>
-        <div>
+    <StyleContainerCard className="contenedor">
+        <ImgCardCAtom src={information4}/>
+        <div className="info">
+            <Slider className="sliderUp"/>
             <ContenidoCards msgTitle="Danza urbana" contenido="En este curso de danza 
-            urbana aprenderás aplicar las técnicas de este tipo de danza y sus respectivas
-             denominaciones. Es fácil de aprender y solo se requiere tener conocimientos 
-             elementales."/>
+                urbana aprenderás aplicar las técnicas de este tipo de danza y sus respectivas
+                denominaciones. Es fácil de aprender y solo se requiere tener conocimientos 
+                elementales."/>
         </div>
     </StyleContainerCard> );
 }
