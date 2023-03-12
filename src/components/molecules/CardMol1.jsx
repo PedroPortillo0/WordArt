@@ -4,19 +4,7 @@ import Slider from "../atoms/Slider";
 
 import Information1 from '../../assets/img/information1.png';
 
-import styled from "styled-components";
-
 import '../../assets/styles/LandingPage/Cards.css'
-
-const StyleContainerCard = styled.div`
-    overflow: hidden;
-    width: 329px;
-    height: 467px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.543);
-    border-radius: 20px;
-    margin-right: 7%;
-    margin-top: 10%;
-`;
 
 function CardMol1() {
     return ( 

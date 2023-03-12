@@ -3,7 +3,7 @@ import Linea from "../atoms/Linea";
 import Contacto from "../molecules/Contacto";
 import styled from "styled-components";
 
-import '../../assets/styles/PiePagina.css';
+import '../../assets/styles/LandingPage/PiePagina.css';
 
 const StyleDiv = styled.div`
     height: 300px;

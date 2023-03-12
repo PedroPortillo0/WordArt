@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import WrapperLabelHeader from '../molecules/WrapperLabelHeader';
 
-import '../../assets/styles/PiePagina.css'
+import '../../assets/styles/LandingPage/PiePagina.css'
 
 
 function Redireccion() {

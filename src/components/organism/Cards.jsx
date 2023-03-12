@@ -16,6 +16,7 @@ const StyleCards2 = styled.div`
 `;
 
 const StyleCardsContainer = styled.div`
+    width: 100%;
     margin-top: -15%;
     align-items: center;
     justify-content: center;
