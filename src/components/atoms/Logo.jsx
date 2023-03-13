@@ -1,9 +1,8 @@
-import LogoImg from '../../assets/img/Logo.webp'
 import '../../assets/styles/LandingPage/Header.css'
 
-function Logo() {
+function Logo({src}) {
     return ( 
-            <img className='logo' src={LogoImg}/>
+            <img className='logo' src={src}/>
      );
 }
 

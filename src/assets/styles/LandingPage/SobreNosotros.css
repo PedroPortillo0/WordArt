@@ -1,0 +1,89 @@
+.title{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.sorJuana{
+    margin-top: 5%;
+    width: 60%;
+}
+
+
+.container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container-puntos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: left;
+}
+.puntos{
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size:15px;
+    padding: 10px 0;
+}
+
+.contenido-text{
+    text-align: center;
+    width: 100%;
+    padding: 0 40px;
+}
+@media screen and (min-width: 510px) and (max-width: 767px){
+    .contenido-text{
+        padding: 0 80px;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .title{
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sorJuana{
+        display: inline;
+        width:100%;
+        padding: 0 80px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido-text{
+        text-align: center;
+        width: 62%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .title{
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sorJuana{
+        display: inline;
+        width: 100%;
+        padding: 0 80px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido-text{
+        text-align: center;
+        width: 32%;
+    }
+}

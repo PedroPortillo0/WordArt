@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CarruseImgMol from '../molecules/CarruselmgMol'
+import CarruseImgMol from '../../molecules/CarruselmgMol'
 
 const StyleCarruselImages = styled.div`
     margin-top: -12%;

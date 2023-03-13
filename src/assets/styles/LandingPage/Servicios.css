@@ -1,11 +1,9 @@
 
 .imgServicios{
-    width:40%;
-    position: static;
-    margin-left: -110%;
-    margin-top: -50%;
+    display: none;
 }
 .titleServicios{
+    padding: 50px;
     font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-weight: 400;
@@ -23,13 +21,55 @@
     text-align: center;
     color: #000000;
     margin-top:1%;
+    padding: 50px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1300px){
+.p1{
+    width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .imgServicios{
+        display: inline;
         width:25%;
         position: absolute;
-        margin-left: -60%;
+        margin-left: -67%;
+        margin-top: -45%;
+    }
+    .titleServicios{
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 33px;
+        text-align: center;
+        color: #FAA41B;
+    }
+    .pServicios{
+        padding: 0 80px;
+        font-family: 'Comic Neue', cursive;;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        margin-top:1%;
+    }
+    .p1{
+        display: none;
+    }
+}
+@media screen and (min-width: 1025px){
+    .imgServicios{
+        display: inline;
+        width:25%;
+        position: absolute;
+        margin-left: -66%;
         margin-top: -40%;
+    }
+    @media screen and (min-width: 1200px) {
+        .imgServicios{
+            margin-left: -62%;
+        }
     }
     .titleServicios{
         font-family: 'Comfortaa', cursive;
@@ -49,5 +89,8 @@
         text-align: center;
         color: #000000;
         margin-top:1%;
+    }
+    .p1{
+        display: none;
     }
 }

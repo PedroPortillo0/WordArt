@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import slider1 from '../../assets/img/slider1-1.svg';
@@ -109,7 +110,11 @@ function CarruseImgMol() {
                 </div>
             </StyleCon3Div>
         </div>
-    </StyleContainerImages> );
+        <div className="carruselImg">
+            <Link to="/login" />
+        </div>
+    </StyleContainerImages>
+    );
 }
 
 export default CarruseImgMol;

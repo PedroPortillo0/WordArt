@@ -1,15 +1,11 @@
-import styled from "styled-components";
-import Juana from '../../assets/img/SorJuana.svg';
+import Juana from '../../assets/img/sorJuana.png';
 
-const StyleImg = styled.img`
-    width: 100%;
-    padding: 0 80px;
-`;
+import '../../assets/styles/LandingPage/SobreNosotros.css'
 
 
 function SorJuanaAtom() {
     return ( <div>
-        <StyleImg src={Juana}/>
+        <img className="sorJuana" src={Juana}/>
     </div> );
 }
 

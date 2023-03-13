@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import SorJuanaAtom from "../atoms/SorJuanaSobreNosotros";
-import SobreNosotrosMol from "../molecules/SobreNosostrosMol";
+import SorJuanaAtom from "../../atoms/SorJuanaSobreNosotros";
+import SobreNosotrosMol from "../../molecules/SobreNosostrosMol";
+
+import '../../../assets/styles/LandingPage/SobreNosotros.css'
 
 const StyleSobreNosotros = styled.div`
     width: 100%;
@@ -14,17 +16,6 @@ const StyleCentrar = styled.div`
     padding: 11% 0;
 `;
 
-const StyleDiv = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-const StyleDivTitle = styled.div`
-    display:flex;
-    text-align: center;
-    justify-content: center;
-`;
 
 const StyleH2 = styled.h2`
     font-family: 'Comfortaa', cursive;
@@ -43,13 +34,15 @@ function SobreNosotros() {
     return ( 
         <StyleSobreNosotros id="1">
             <StyleCentrar>
-                <StyleDivTitle>
-                    <StyleH2>Sobre</StyleH2><StyleSpan>Nosotros</StyleSpan>
-                </StyleDivTitle>
-                <StyleDiv>
-                    <SorJuanaAtom/>
-                    <SobreNosotrosMol/>
-                </StyleDiv>
+                <div>
+                    <div className="title">
+                        <StyleH2>Sobre</StyleH2><StyleSpan>Nosotros</StyleSpan>
+                    </div>
+                    <div className="container">
+                        <SorJuanaAtom/>
+                        <SobreNosotrosMol/>
+                    </div>
+                </div>
             </StyleCentrar>
         </StyleSobreNosotros>
      );

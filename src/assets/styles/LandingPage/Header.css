@@ -1,55 +1,56 @@
 header{
-    background-color: #4c4c4caf;
+    background-color: #00000080;
     width:100%;
-    height: 4em;
+    height:5em;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    margin-bottom: 40%;
+    justify-content: space-evenly;
+    position: fixed;
+    margin-top: -44%;
 }
-
+.logo{
+    display: none;
+}
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .iconLogo{
+        width: 8%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:767px){
+    .iconLogo{
+        width: 6%;
+    }
+}
 .label{
     font-size: 1.1em;
 }
-.logo{
-    width: 10%;
-    margin: 0 15px;
-}
-.iniciarSesion{
-    font-family: 'Comfortaa', cursive;
-    font-weight: 800;
-    width: 213px;
-    height: 35px;
-    background-color: #30BFCE;
-    border-radius:5em;
-    border: none;
-    box-shadow: -1px 2px 4px #00000058 ; 
-    transition: .3s;
-    margin: 0 15px;
-}
-.iniciarSesion-link{
-    color: white;
-}
-@media screen and (hover:hover){
-    .iniciarSesion:hover{
-        background-color: #76ebf8;
-    }
-}
-
-.section{
-    margin: 0 20px;
+.section,
+.section2{
+    font-size: .8em;
     height: 100%;
-    flex: 1;
+    width: 35%;
     transition: .5s;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
+.section:hover{
+    background-color: #30bece7a;
+}
+.section2:hover{
+    background-color: #fff70075;
+}
+.iniciarSesion-link{
+    display: none;
+}
+.section3{
+    display: none;
+}
 
-@media screen and (min-width: 1024px) and (max-width: 1300px){
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
     header{
         background-color: #4c4c4caf;
         width:100%;
@@ -59,13 +60,14 @@ header{
         align-items: center;
         position: fixed;
         top: 0;
-        margin-bottom: 40%;
+        margin-top: 0%;
     }
 
     .label{
         font-size: 1.1em;
     }
     .logo{
+        display: inline;
         width: 10%;
         margin: 0 15px;
     }
@@ -99,9 +101,13 @@ header{
         justify-content: center;
         text-decoration: none;
     }
+    .iconLogo{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 1301px){
+@media screen and (min-width: 1024px){
+    
     header{
         background-color: #00000074;
         width:100%;
@@ -114,11 +120,14 @@ header{
         top: 0;
         left: 0;
         transition: .5s;
+        margin-top: 0%;
+
     }
     .label{
         font-size: 1.1em;
     }
     .logo{
+        display: inline;
         width: 10%;
         margin: 0 15px;
     }
@@ -162,5 +171,8 @@ header{
     }
     .iniciarSesion:hover{
         background-color: #5cd5e3;
+    }
+    .iconLogo{
+        display: none;
     }
 }

@@ -1,34 +1,26 @@
-import HeaderBackground from '../assets/img/HeaderBackground.svg'
-import Header from '../components/organism/Header'
-import '../assets/styles/LandingPage.css'
+import Header from '../components/organism/LandingPage/Header'
+import CarruseImg from '../components/organism/LandingPage/CarruseImg'
+import SobreNosotros from '../components/organism/LandingPage/SobreNosotros';
+import Servicios from '../components/organism/LandingPage/Servicios'
+// import Cards from '../components/organism/Cards'
+// import Redireccion from '../components/organism/Redireccion'
+// import PiePagina from '../components/organism/PiePagina'
+import BackgroundHeader from '../components/organism/LandingPage/BackgroundHeader'
 
-import styled from 'styled-components'
-import CarruseImg from '../components/organism/CarruseImg'
-import SobreNosotros from '../components/organism/SobreNosotros';
-import Servicios from '../components/organism/Servicios'
-import Cards from '../components/organism/Cards'
-import Redireccion from '../components/organism/Redireccion'
-import PiePagina from '../components/organism/PiePagina'
-
-const  StyleHeaderBackgroundIMG = styled.img`
-    width:100%;
-    display: inline-block;
-    text-align: center;
-    position: static;
-`;
+import '../assets/styles/LandingPage/LandingPage.css'
 
 
 function LandingPage() {
     return ( 
         <>
-            <StyleHeaderBackgroundIMG src={HeaderBackground}/>
+            <BackgroundHeader/>
             <Header/>
             <CarruseImg/>
             <SobreNosotros/>
             <Servicios/>
-            <Cards/>
-            <Redireccion/>
-            <PiePagina/>
+            {/* <Cards/> */}
+            {/* <Redireccion/> */}
+            {/* <PiePagina/> */}
         </>
      );
 }

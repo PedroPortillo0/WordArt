@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import violin from '../../assets/img/violin.png'
+import violin from '../../../assets/img/violin.png'
 
-import '../../assets/styles/LandingPage/Servicios.css'
+import '../../../assets/styles/LandingPage/Servicios.css'
 
 const StyleDiv = styled.div`
     position:static;
