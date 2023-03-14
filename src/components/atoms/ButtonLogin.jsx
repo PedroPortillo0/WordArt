@@ -10,8 +10,6 @@ border-radius: 25px;
 color: white;
 font-family: Comfortaa;
 border: 0px;
-
-
 `;
 
 function Button() {
