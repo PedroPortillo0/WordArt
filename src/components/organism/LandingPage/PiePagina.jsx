@@ -1,9 +1,9 @@
-import SobreNostrosPie from "../molecules/SobreNosotrosPie";
-import Linea from "../atoms/Linea";
-import Contacto from "../molecules/Contacto";
+import SobreNostrosPie from "../../molecules/SobreNosotrosPie";
+import Linea from "../../atoms/Linea";
+import Contacto from "../../molecules/Contacto";
 import styled from "styled-components";
 
-import '../../assets/styles/LandingPage/PiePagina.css';
+import '../../../assets/styles/LandingPage/PiePagina.css';
 
 const StyleDiv = styled.div`
     height: 300px;

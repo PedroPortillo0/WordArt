@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import WrapperLabelHeader from '../molecules/WrapperLabelHeader';
+import WrapperLabelHeader from '../../molecules/WrapperLabelHeader';
 
-import '../../assets/styles/LandingPage/PiePagina.css'
+import '../../../assets/styles/LandingPage/PiePagina.css'
 
 
 function Redireccion() {

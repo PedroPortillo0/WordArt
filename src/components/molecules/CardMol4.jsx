@@ -7,20 +7,9 @@ import information4 from '../../assets/img/information4.png'
 import styled from "styled-components";
 import '../../assets/styles/LandingPage/Cards.css'
 
-const StyleContainerCard = styled.div`
-    overflow: hidden;
-    width: 329px;
-    height: 467px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.543);
-    border-radius: 20px;
-    margin-left: 7%;
-`;
-
-
 function CardMol4() {
     return ( 
-    <StyleContainerCard className="contenedor">
+    <div className="contenedor">
         <ImgCardCAtom src={information4}/>
         <div className="info">
             <Slider className="sliderUp"/>
@@ -29,7 +18,7 @@ function CardMol4() {
                 denominaciones. Es fácil de aprender y solo se requiere tener conocimientos 
                 elementales."/>
         </div>
-    </StyleContainerCard> );
+    </div> );
 }
 
 export default CardMol4;

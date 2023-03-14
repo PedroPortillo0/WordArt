@@ -2,9 +2,9 @@ import Header from '../components/organism/LandingPage/Header'
 import CarruseImg from '../components/organism/LandingPage/CarruseImg'
 import SobreNosotros from '../components/organism/LandingPage/SobreNosotros';
 import Servicios from '../components/organism/LandingPage/Servicios'
-// import Cards from '../components/organism/Cards'
-// import Redireccion from '../components/organism/Redireccion'
-// import PiePagina from '../components/organism/PiePagina'
+import Cards from '../components/organism/LandingPage/Cards'
+import Redireccion from '../components/organism/LandingPage/Redireccion'
+import PiePagina from '../components/organism/LandingPage/PiePagina'
 import BackgroundHeader from '../components/organism/LandingPage/BackgroundHeader'
 
 import '../assets/styles/LandingPage/LandingPage.css'
@@ -18,9 +18,9 @@ function LandingPage() {
             <CarruseImg/>
             <SobreNosotros/>
             <Servicios/>
-            {/* <Cards/> */}
-            {/* <Redireccion/> */}
-            {/* <PiePagina/> */}
+            <Cards/>
+            <Redireccion/>
+            <PiePagina/>
         </>
      );
 }

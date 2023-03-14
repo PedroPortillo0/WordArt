@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SorJuanaAtom from "../../atoms/SorJuanaSobreNosotros";
-import SobreNosotrosMol from "../../molecules/SobreNosostrosMol";
+import SobreNosotrosMol from '../../molecules/SobreNosostrosMol'
+
 
 import '../../../assets/styles/LandingPage/SobreNosotros.css'
 
