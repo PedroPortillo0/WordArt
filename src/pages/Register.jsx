@@ -1,8 +1,16 @@
-import FormRegister from "../components/organism/FormRegister";
+import RegisterDatos from "../components/organism/Register/RegisterDatos";
+import FondoMovilLogo from '../components/molecules/FondoMovilLogo'
+
+import '../assets/styles/Register/Register.css'
+import RegisterDesk from "../components/organism/Register/RegisterDesk";
 
 function Register() {
     return ( 
-        <FormRegister/>
+        <>
+            <FondoMovilLogo/>
+            <RegisterDatos/>
+            <RegisterDesk/>
+        </>    
      );
 }
 

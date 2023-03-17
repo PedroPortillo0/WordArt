@@ -1,8 +1,10 @@
 import LogoGeneral from '../../atoms/LogoGeneral'
-import WrapperlInput from '../../molecules/WrapperInputLogin';
+import WrapperlInput from '../../molecules/WrapperInput';
 
 import '../../../assets/styles/Login/Login.css'
 import ir from '../../../assets/img/icons/ir.png'
+
+import { Link } from 'react-router-dom';
 
 function LoginDesk() {
     return ( 
@@ -28,6 +30,12 @@ function LoginDesk() {
                                         <img className='ir' src={ir}/>
                                     </button>
                                 </form>
+                            </div>
+                            <div className='direcciones'>
+                                <label className='registrate'>¿No tienes cuenta? <Link to="/registrarse" className='link'>Registrate</Link></label>
+                                <div className='direcciones-sub'>
+                                    <Link to="/recuperarContraseña" className='link'>Recuperar contraseña</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

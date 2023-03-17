@@ -1,6 +1,6 @@
-import RecuperarContraOrg from "../components/organism/RecuperarContraOrg";
+import RecuperarContraOrg from "../components/organism/RecuperarContraseña/RecuperarContraOrg";
 
-import '../assets/styles/RecuperarContraseña.css'
+import '../assets/styles/RecuperarContraseña/RecuperarContraseña.css'
 
 function RecuperarContraseña() {
     return ( 

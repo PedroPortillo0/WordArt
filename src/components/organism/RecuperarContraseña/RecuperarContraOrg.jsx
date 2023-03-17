@@ -1,8 +1,8 @@
-import ImgRecuperar from '../../assets/img/ImgRecuperarContraseña.png';
+import ImgRecuperar from '../../../assets/img/ImgRecuperarContraseña.png';
 
 import styled from "styled-components";
-import RecuperarContraseñaMol from '../molecules/RecuperarContraseñaMol';
-import RecuperarForm from '../molecules/RecuperarForm';
+import RecuperarContraseñaMol from '../../molecules/RecuperarContraseñaMol';
+import RecuperarForm from '../../molecules/RecuperarForm';
 
 const StyledContainer = styled.div`
     margin-left:-24%;

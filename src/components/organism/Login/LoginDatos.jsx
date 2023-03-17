@@ -1,5 +1,5 @@
 import LabelGeneral from '../../atoms/LabelGeneral';
-import WrapperlInput from '../../molecules/WrapperInputLogin';
+import WrapperlInput from '../../molecules/WrapperInput';
 
 import ir from '../../../assets/img/icons/ir.png';
 import '../../../assets/styles/Login/Login.css';

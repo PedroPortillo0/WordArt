@@ -147,6 +147,7 @@ input{
     }
     .container-login-desk{
         display: flex;
+
     }
     .container-text-desk{
         font-family: 'Comfortaa';
@@ -233,5 +234,9 @@ input{
         font-size: 1.4em;
         font-family: 'Comfortaa';
         font-weight: 800;
+    }
+    .direcciones{
+        font-family: 'Comfortaa';
+        font-weight: 500;
     }
 }
