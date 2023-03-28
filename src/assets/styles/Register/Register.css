@@ -20,13 +20,13 @@ body{
             margin-left: -5%;
             display: inline;
             width: 110%;
-            height: 47em;
+            height: 62em;
             position: static;
         }
         .div-fondo{
             background: linear-gradient(90deg, rgba(48, 191, 206, 0.8) 0.29%, rgba(48, 191, 206, 0.6) 50.52%, rgba(48, 191, 206, 0.5) 100%);
             width: 30%;
-            height: 48em;
+            height: 62em;
             margin-right: 2%;
             margin-left: 6%; 
         }
@@ -36,13 +36,13 @@ body{
             margin-left: -5%;
             display: inline;
             width: 110%;
-            height: 48em;
+            height: 62.3em;
             position: static;
         }
         .div-fondo{
             background: linear-gradient(90deg, rgba(48, 191, 206, 0.8) 0.29%, rgba(48, 191, 206, 0.6) 50.52%, rgba(48, 191, 206, 0.5) 100%);
             width: 30%;
-            height: 48em;
+            height: 62.3em;
             margin-right: 2%;
             margin-left: 6%; 
         }
