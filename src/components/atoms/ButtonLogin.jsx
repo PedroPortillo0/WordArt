@@ -12,10 +12,10 @@ font-family: Comfortaa;
 border: 0px;
 `;
 
-function Button() {
+function Button({msg}) {
     return (  
-        <StyledButton >
-           Entrar
+        <StyledButton className='button' >
+            {msg}
         </StyledButton>
         
     );

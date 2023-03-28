@@ -32,7 +32,7 @@ function LoginDatos() {
                     </form>
                 </div>
                 <div className='direcciones'>
-                    <label className='registrate'>¿No tienes cuenta? <Link to="/registrarse" className='link'>Registrate</Link></label>
+                    <label className='registrate'>¿No tienes cuenta? <Link to="/register" className='link'>Registrate</Link></label>
                     <div className='direcciones-sub'>
                         <Link to="/recuperarContraseña" className='link'>Recuperar contraseña</Link>
                     </div>

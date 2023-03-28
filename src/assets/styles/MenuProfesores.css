@@ -1,0 +1,15 @@
+.styleimg{
+    width: 96px;
+    height: 65px;
+}
+.estilo{
+    
+    border-top-left-radius:130px;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius:139px;    
+    background-color: #E8EBF2;
+}
+.estilo-header{
+    border: none;
+    background-color: none;
+}
