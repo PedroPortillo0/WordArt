@@ -1,6 +1,6 @@
-function Input({type, placeholder}){
+function Input({type, placeholder, name}){
     return(
-        <input type={type}  placeholder={placeholder}/>
+        <input type={type} name={name} placeholder={placeholder}/>
     )
 }
 

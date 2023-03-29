@@ -12,10 +12,10 @@ font-family: Comfortaa;
 border: 0px;
 `;
 
-function Button({msg}) {
+function Button({msg, onclick,img}) {
     return (  
-        <StyledButton className='button' >
-            {msg}
+        <StyledButton className='button' onclick={onclick} >
+            {msg} {img}
         </StyledButton>
         
     );

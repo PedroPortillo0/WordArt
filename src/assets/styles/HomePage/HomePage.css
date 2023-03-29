@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+.separador{
+    width: 100%;
+    height: 2px;
+    background-color: #8C8C8C;
+}
+.separador2{
+    width: 2px;
+    height: 100%;
+    background-color: #8C8C8C;
+}
+
+.headerHP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content-HP{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+
+}
+.logo-general{
+    width: 20%;
+}
+.settingsHP{
+    width: 10%;
+}
+.container-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-user-2{
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+}
+.name-estado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-vacio{
+    width: 20%;
+}
+.icon-alumn{
+    width: 10%;
+}
+.circulo{
+    margin-left: 5px;
+    margin-top: -10px;
+    background: #4BEA00;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.recomendaciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    text-align: center;
+}
+.carrusel-recomendaciones{
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5%;
+}
+.carrusel-recomendaciones ul{
+    padding: 10px 0;
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+}
+.img-recomendacion{
+    width: 150%;
+}
+.container-cursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+.container-card-HP{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-HP{
+    padding: 30px 0 0 0;
+    background-color: rgb(27, 113, 84);
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: 1.4em;
+    width: 20em;
+    height: 100%;
+}
+.img-card-hp{
+    width: 90%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+.ver-mas-HP{
+    margin-bottom:5%;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+    width: 213px;
+    height: 35px;
+    background-color: #30BFCE;
+    border-radius:5em;
+    border: none;
+    box-shadow: -1px 2px 4px #00000058 ; 
+    transition: .3s;
+}
+
+.container-user-recomendaciones-desk{
+    display: none;
+}
+@media screen and (min-width: 1024px){
+    .container-user{
+        display: none;
+    }
+    .recomendaciones{
+        display: none;
+    }
+    .logo-general{
+        width: 7%;
+        margin-top: 0%;
+    }
+    .container-cursos{
+        display: none;
+    }
+    .headerHP{
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-content-HP{
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px; 
+    }   
+    .container-user-recomendaciones-desk{
+        width: 32%;
+        height: 100%;
+        display: flex;
+    }
+    .container-user-desk{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-alumn-desk{
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 34%;
+    }
+    .container-text-user-desk{
+        width: 100%;
+    }
+    .name-conectar-desk{
+        display: flex;
+    }
+    .circulo{
+        margin-top: 0%;
+    }
+    .recomendaciones-desk{
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content-cards-HP{
+        height: 28em;
+        overflow: hidden;
+    }
+    .sections-desk-hp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .title-cursos-desk{
+        width: 100%;
+        background-color: #4BEA00;
+    }
+    .content-cards-desk{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-desk-user-recomendaciones{
+        width: 110%;
+        background-color: rgb(255, 89, 0);
+    }
+    .icon-range{
+        width: 8%;
+    }
+    .onnline{
+        width: 1%;
+        margin-left: .7%;
+        text-align: right;
+    }
+}

@@ -11,8 +11,11 @@ import Teatro from '../pages/Teatro';
 import Danza  from '../pages/Danza';
 import Pintura from '../pages/Pintura';
 import PorPagar from '../pages/PorPagar';
+// import HomePage from '../pages/HomePage';
 import PasarelaDePagos from '../pages/PasarelaDePagos';
 import MenuProfesores from '../pages/MenuProfesores';
+
+
 function App() {
     return ( 
         <BrowserRouter>
@@ -21,6 +24,8 @@ function App() {
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/recuperarContraseña" element={<RecuperarContraseña/>} />
+                {/* <Route path="/homepage" element={<HomePage/>}/> */}
+
                 <Route path="/configuracion1" element={<ConfiguracionProfesor/>}/>
                 <Route path="/configuracion2" element={<ConfiguracionUsuario/>}/>   
                 <Route path="/resultadoMusica" element={<Musica/>}/>  

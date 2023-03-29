@@ -4,7 +4,6 @@ import Slider from "../atoms/Slider";
 
 import information4 from '../../assets/img/information4.png'
 
-import styled from "styled-components";
 import '../../assets/styles/LandingPage/Cards.css'
 
 function CardMol4() {

@@ -5,9 +5,46 @@ import '../../../assets/styles/Login/Login.css'
 import ir from '../../../assets/img/icons/ir.png'
 
 import { Link } from 'react-router-dom';
+import { useRef } from 'react';
+import {Navigate, useNavigate} from 'react-router-dom';
 
 function LoginDesk() {
+    const navigate = useNavigate()
+
+    const Form = useRef()
+
+    const handlerClick=(e)=>{
+        e.preventDefault();
+        const newForm= new FormData (Form.current)
+        if (newForm.get('email')==''){
+            // setState('El campo nobre de usuario no puede estar vacio')
+        }else if(newForm.get('password')==''){
+            setState('El campo contraseña no puede estar vacio')
+        }else{
+            fetch('http://localhost:8080/register/getAll')
+            .then(response=>response.json())
+            .then(data=>{
+                const email=data
+                let i=0;
+                let encontrado=false
+                while(!encontrado&&i<email.length){
+                    if (email[i].email==newForm.get('email')){
+                        if(email[i].password==newForm.get('password')){
+                            encontrado=true
+                            navigate('/')
+                        }
+                    }
+                    i++;
+                }
+            })
+        }
+    };
+
+
+
+
     return ( 
+            
         <div className="container-login-desk">
             <div className="login-datos-desk">
                 <div>
@@ -22,13 +59,17 @@ function LoginDesk() {
                             </div>
                             <div className='all-text-desk'>hermoso</div>
                             <div className='div-form-desk'>
-                                <form id='formulario' className='form-desk'>
-                                    <WrapperlInput msn="Email:" type="email" placeholder="user@gmail.com"/>
-                                    <WrapperlInput msn="Password:" type="password" placeholder="********"/>
-                                    <button className='entrar' type="submit">
+                                <form id='formulario' className='form-desk' ref={Form}  >
+                                    <WrapperlInput msn="Email:" name={"email"}  type="email" placeholder="user@gmail.com"/>
+                                    <WrapperlInput msn="Password:" name={"password"}  type="password" placeholder="********"/>
+                                    <button className='entrar'  onClick={handlerClick} >
                                         Entrar
                                         <img className='ir' src={ir}/>
                                     </button>
+                                    {/* <button onClick={handlerClick} className='entrar' >
+                                        Entrar
+                                        <img className='ir' src={ir}/>
+                                    </button> */}
                                 </form>
                             </div>
                             <div className='direcciones'>
@@ -50,7 +91,7 @@ function LoginDesk() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
      );
 }
 

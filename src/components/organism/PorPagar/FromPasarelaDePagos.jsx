@@ -112,12 +112,11 @@ function FromPasarelaDePagos() {
                 <DivHijo2>
                     <DivMetodoPago>
                         <DivContenido>
-                            <Divtext >
-
+                            <Divtext  id='paypal-Button'>
                             </Divtext>
                         </DivContenido>
 
-                    </DivMetodoPago>
+                        </DivMetodoPago>
                     <DivResumen>
 
                     </DivResumen>

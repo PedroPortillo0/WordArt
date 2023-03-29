@@ -12,11 +12,11 @@ flex-direction: column;
 padding-top: 5%;
 `;
 
-function WrapperlInput({msn,type, placeholder}) {
+function WrapperlInput({msn,type, placeholder,name}) {
     return ( 
         <StyledWrapperInput>
             <Title msn={msn}/>
-            <Input type={type} placeholder={placeholder}/>
+            <Input type={type} placeholder={placeholder} name={name}/>
         </StyledWrapperInput>
      );
 }

@@ -8,9 +8,9 @@ const StyledInput = styled.input`
  border-radius: 8px;
 `;
 
-function Input({type}){
+function Input({type, name}){
     return(
-        <StyledInput type={type}  />
+        <StyledInput type={type} name={name} />
     )
 }
 
