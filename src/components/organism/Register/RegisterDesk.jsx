@@ -71,7 +71,6 @@ function RegisterDesk() {
                             <WrapperlInput msn="Correo:" name={"email"} type="email" placeholder="user@gmail.com"/>
                             <WrapperlInput msn="Contraseña:" name={"password"}  type="password" placeholder="********"/>
                             <WrapperlInput msn="Confirmar contraseña:" name={"confirm_password"} type="password" placeholder="********"/>
-                            
                             <button onClick={handlerClick} className='guardar-register' >
                                 Entrar
                                 <img className='ir' src={ir}/>

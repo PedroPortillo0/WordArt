@@ -15,7 +15,7 @@ body{
 .separador2{
     width: 2px;
     height: 100%;
-    background-color: #8C8C8C;
+    background-color: #8c8c8c;
 }
 
 .headerHP{
@@ -112,7 +112,7 @@ body{
     background-color: transparent;
     border: solid 2px black;
     border-radius: 1.4em;
-    width: 20em;
+    width: 23em;
     height: 100%;
 }
 .img-card-hp{
@@ -134,10 +134,13 @@ body{
     transition: .3s;
 }
 
-.container-user-recomendaciones-desk{
+.container-homepage{
     display: none;
 }
 @media screen and (min-width: 1024px){
+    .card-HP{
+        width: 17em;
+    }
     .container-user{
         display: none;
     }
@@ -164,10 +167,12 @@ body{
         justify-content: space-between;
         padding: 20px 20px 20px 20px; 
     }   
-    .container-user-recomendaciones-desk{
-        width: 32%;
-        height: 100%;
+    .container-homepage{
+        width: 100%;
         display: flex;
+    }
+    .container-desk-user-recomendaciones{
+        width: 50%;
     }
     .container-user-desk{
         width: 100%;
@@ -176,9 +181,11 @@ body{
         justify-content: center;
     }
     .icon-alumn-desk{
-        margin-left: 3%;
+        margin-left: 5%;
         margin-right: 3%;
-        width: 34%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 25%;
     }
     .container-text-user-desk{
         width: 100%;
@@ -197,28 +204,56 @@ body{
         text-align: center;
     }
     .content-cards-HP{
-        height: 28em;
-        overflow: hidden;
+        margin-top: 3%;
+        width: 100%;
+        height: 690px;
+        overflow: auto;
+        text-align: center;
     }
+    .content-cards-HP::-webkit-scrollbar {
+        width: 7px;
+    }
+    .content-cards-HP::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 5px;
+    }
+    
+    .content-cards-HP::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    .content-cards-HP::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 5px;
+    }
+
+
+
+
     .sections-desk-hp{
+        width: 100%;
+        border-left: 2px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 10px;
     }
     .title-cursos-desk{
         width: 100%;
-        background-color: #4BEA00;
     }
     .content-cards-desk{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .container-desk-user-recomendaciones{
-        width: 110%;
-        background-color: rgb(255, 89, 0);
+    .content-cards-desk1{
+        margin-right: 5%;
     }
+    .content-cards-desk2{
+        margin-left: 5%;
+    }
+
     .icon-range{
         width: 8%;
     }
@@ -227,4 +262,66 @@ body{
         margin-left: .7%;
         text-align: right;
     }
+
+
+
+    .container-recomendacion{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-recomendacion div{
+        margin-top: 5%; 
+        width: 80%;
+        background-color: #30BFCE ;
+        padding: 15px;
+        border-radius: 1em;
+        margin-bottom: 3%;
+    }
+    .container-recomendacion img{
+        width: 100%;
+        margin-bottom: 5%;
+        border-radius: 1em;
+    }
+    .container-recomendacion p{
+        font-family: 'Comfortaa';
+        font-weight: 600;
+        margin-bottom: 4%;
+        margin-top: 1%;
+    }
+
+
+
+    .container-recomendacion2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-recomendacion2 div{
+        margin-top: 5%; 
+        width: 80%;
+        background: linear-gradient(90deg, rgba(128, 0, 255, 0.21) 0%, rgba(128, 0, 255, 0.3) 100%);
+        padding: 15px;
+        border-radius: 1em;
+        margin-bottom: 3%;
+    }
+    .container-recomendacion2 img{
+        width: 100%;
+        margin-bottom: 5%;
+        border-radius: 1em;
+    }
+    .container-recomendacion2 p{
+        font-family: 'Comfortaa';
+        font-weight: 600;
+        margin-bottom: 4%;
+        margin-top: 1%;
+    }
+    @media screen and (min-width: 1200px){
+        .card-HP{
+            width: 20em;
+        }
+    }
+    
 }

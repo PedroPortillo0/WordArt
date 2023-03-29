@@ -64,10 +64,7 @@ function RegisterDatos() {
                         <WrapperlInput msn="Contraseña:"  type="password" name={"password"} placeholder="********"/>
                         <WrapperlInput msn="Confirmar contraseña:" name='confirm_password' type="password" placeholder="********"/>
                         
-                        <button onClick={handlerClick} className='guardar-register' >
-                                Entrar
-                                <img className='ir' src={ir}/>
-                            </button>
+                        
 
                     </form>
                 </div>

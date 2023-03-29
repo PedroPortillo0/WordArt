@@ -1,5 +1,5 @@
 import LogoGeneral from '../../atoms/LogoGeneral'
-import settings from '../../../assets/img/icons/settings.png'
+import settings from '../../../assets/img/icons/settings.png';
 
 import { Link } from 'react-router-dom';
 function HeaderHomePage() {
