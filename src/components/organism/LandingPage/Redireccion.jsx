@@ -7,7 +7,7 @@ import '../../../assets/styles/LandingPage/PiePagina.css'
 
 function Redireccion() {
     return ( 
-        <Link to="/*" className='Redireccion'>
+        <Link to="/login" className='Redireccion'>
             <div className='redireccion'>
                 <div className='title-redireccion'>
                     <WrapperLabelHeader  msg="Conoce más"/>

@@ -4,7 +4,6 @@ import Slider from "../atoms/Slider";
 
 import information3 from '../../assets/img/information3.png'
 
-import styled from "styled-components";
 import '../../assets/styles/LandingPage/Cards.css'
 
 

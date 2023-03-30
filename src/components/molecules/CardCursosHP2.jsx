@@ -11,7 +11,7 @@ function CardCursosHP2({msg, src}) {
                 <div>
                     <img className="img-card-hp" src={src}/>
                 </div>
-                <Link to="/pintura" >
+                <Link to="/resultadoPintura" >
                     <div>
                         <button className="ver-mas-HP">Ver más</button>
                     </div>

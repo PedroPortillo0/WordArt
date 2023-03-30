@@ -14,6 +14,8 @@ import PorPagar from '../pages/PorPagar';
 import HomePage from '../pages/HomePage';
 import PasarelaDePagos from '../pages/PasarelaDePagos';
 import MenuProfesores from '../pages/MenuProfesores';
+import RegistroProfesor from '../pages/RegistroProfesor';
+import Filtro from '../pages/Filtro';
 
 
 function App() {
@@ -25,7 +27,6 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/recuperarContraseña" element={<RecuperarContraseña/>} />
                 <Route path="/homepage" element={<HomePage/>}/>
-
                 <Route path="/configuracion1" element={<ConfiguracionProfesor/>}/>
                 <Route path="/configuracion2" element={<ConfiguracionUsuario/>}/>   
                 <Route path="/resultadoMusica" element={<Musica/>}/>  
@@ -35,6 +36,10 @@ function App() {
                 <Route path="/PorPagar" element={<PorPagar/>}/>
                 <Route path="/pagar" element={<PasarelaDePagos/>}/>
                 <Route path="/menuProfesores" element={<MenuProfesores/>}/>
+                <Route path="/registroProfesores" element={<RegistroProfesor/>}/>
+                <Route path="/filtro" element={<Filtro/>}/>
+
+
 
                 <Route path="/*" element={<NotFound/>} />
             </Routes>

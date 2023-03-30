@@ -24,7 +24,7 @@ function LoginDatos() {
         }else if(newForm.get('password')==''){
             setState('El campo contraseña no puede estar vacio')
         }else{
-            fetch('http://localhost:8080/register/getAll')
+            fetch('http://52.0.218.249/register/getAll')
             .then(response=>response.json())
             .then(data=>{
                 const email=data
@@ -32,9 +32,9 @@ function LoginDatos() {
                 let encontrado=false
                 while(!encontrado&&i<email.length){
                     if (email[i].email==newForm.get('email')){
-                        if(email[i].password==newForm.get('password')){
+                        if(email[i].contraseña==newForm.get('contraseña')){
                             encontrado=true
-                            navigate('/')
+                            navigate('/homepage')
                         }
                     }
                     i++;
@@ -57,11 +57,8 @@ function LoginDatos() {
                     <div className='content-form'>
                         <form id='formulario' ref={Form} >
                             <WrapperlInput msn="Email:" name={"email"} type="email" placeholder="user@gmail.com"/>
-                            <WrapperlInput msn="Password:" name={"password"}  type="password" placeholder="********"/>
-                            {/* <button className='entrar'  onClick={handlerClick} >
-                                Entrar
-                                <img className='ir' src={ir}/>
-                            </button> */}
+                            <WrapperlInput msn="Password:" name={"contraseña"}  type="password" placeholder="********"/>
+                        
                             <button onClick={handlerClick} className='entrar' >
                                 Entrar
                                 <img className='ir' src={ir}/>
@@ -69,7 +66,7 @@ function LoginDatos() {
                         </form>
                     </div>
                     <div className='direcciones'>
-                        <label className='registrate'>¿No tienes cuenta? <Link to="/register" className='link'>Registrate</Link></label>
+                        <label className='registrate'>¿No tienes cuenta? <Link to="/filtro" className='link'>Registrate</Link></label>
                         <div className='direcciones-sub'>
                             <Link to="/recuperarContraseña" className='link'>Recuperar contraseña</Link>
                         </div>

@@ -6,6 +6,7 @@ import '../assets/styles/HomePage/HomePage.css'
 import Recomendaciones from "../components/organism/HomePage/Recomendaciones";
 import Cursos from "../components/organism/HomePage/Cursos";
 import URDesk from "../components/organism/HomePage/URDesk";
+
 function HomePage() {
     return ( 
         <>

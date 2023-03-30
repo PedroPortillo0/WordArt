@@ -7,6 +7,7 @@ import Button from '../../atoms/ButtonLogin';
 import Guitarra from '../../../assets/img/Musica/Guitarra.png';
 import Piano from '../../../assets/img/Musica/Piano.png';
 import Acordeon from '../../../assets/img/Musica/Acordeon.png';
+import { Link } from 'react-router-dom';
 
 const StyledContainer = styled.div` //padre listo
 width:100%;
@@ -21,6 +22,7 @@ const DivHijo1 = styled.div` //hijo1
     height:10%;
     display:flex;
     justify-content: center;
+    border: 2px solid;
     .hijo1-1{
         width:70%;
         height:100%;
@@ -154,8 +156,10 @@ function FormMusica() {
             <StyledContainer>
                 <DivHijo1>
                     <div className='hijo1-1'>
-                        <div className='ContainerImagen'>
-                            <img className='imagen' src={Retroceder} alt="regresar" />
+                        <div className='ContainerImagen' >
+                            <a href="/homepage">
+                                <img className='imagen' src={Retroceder} alt="regresar" />
+                            </a>
                         </div>
                         <div className='ContainerResult'>
                             <div>
@@ -251,9 +255,7 @@ function FormMusica() {
                         </DivContenidoContainer>
                     </DivContainer>
                 </DivHijo2>
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
+                
             </StyledContainer>
 
     );

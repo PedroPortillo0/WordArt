@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import "../../../assets/styles/ConfiguracionProf/FromConfiguracionProf.css";
 import retroceder from '../../../assets/img/Regresar.png';
-import Perfil1 from '../../../assets/img/PerfilProfesor.png';
+import iconUser from '../../../assets/img/icons/user.png'
 import ir from '../../../assets/img/icons/irconfiguracion.png';
 import Label from '../../atoms/LabelLogin';
 
@@ -53,11 +53,15 @@ flex-direction: column;
 
 `;
 const DivfotoPerfil = styled.div` //hijo2,perfil listo
-width:20%;
-height:100%;
-align-items: center;
-justify-content: flex-end;
-display: flex;
+    width:20%;
+    height:100%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    .xd{
+        width:40%;
+        height:80%;
+    }
 `;
 const Divfototexto = styled.div` //hijo2,fototexto listo
 width:20%;
@@ -118,7 +122,7 @@ function FromConfiguracionProf() {
                 <StyledContainerhijo2>
                     <DivInformacion>
                         <DivfotoPerfil>
-                            <img src={Perfil1} alt="foto de perfil" />
+                            <img src={iconUser} className="xd" alt="foto de perfil" />
                         </DivfotoPerfil>
                         <Divfototexto>
                             <div><Label  msn="Alan Romeo"/> </div>

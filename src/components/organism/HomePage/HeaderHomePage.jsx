@@ -8,7 +8,7 @@ function HeaderHomePage() {
             <div className='header-content-HP'>
                 <LogoGeneral/>
                 <div>
-                    <Link to="/configuraciones"><img className='settingsHP' src={settings}/></Link>
+                    <Link to="/configuracion2"><img className='settingsHP' src={settings}/></Link>
                 </div>
             </div>
         </div>

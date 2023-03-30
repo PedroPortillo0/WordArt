@@ -16,7 +16,6 @@ import cardHP3 from '../../../assets/img/cards-HP-3.png'
 import cardHP4 from '../../../assets/img/cards-HP-4.png'
 
 import Separador from '../../atoms/Separador';
-import Separador2 from '../../atoms/SeparadorVertical';
 
 
 

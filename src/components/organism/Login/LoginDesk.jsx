@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import {Navigate, useNavigate} from 'react-router-dom';
 
+
 function LoginDesk() {
-    const navigate = useNavigate()
+
+    const navigate = useNavigate();
 
     const Form = useRef()
 
@@ -17,11 +19,11 @@ function LoginDesk() {
         e.preventDefault();
         const newForm= new FormData (Form.current)
         if (newForm.get('email')==''){
-            // setState('El campo nobre de usuario no puede estar vacio')
+            // alert('El campo nobre de usuario no puede estar vacio')
         }else if(newForm.get('password')==''){
-            setState('El campo contraseña no puede estar vacio')
+            // alert('El campo contraseña no puede estar vacio')
         }else{
-            fetch('http://localhost:8080/register/getAll')
+            fetch('http://3.211.187.52/register/getAll')
             .then(response=>response.json())
             .then(data=>{
                 const email=data
@@ -29,9 +31,9 @@ function LoginDesk() {
                 let encontrado=false
                 while(!encontrado&&i<email.length){
                     if (email[i].email==newForm.get('email')){
-                        if(email[i].password==newForm.get('password')){
+                        if(email[i].contraseña==newForm.get('contraseña')){
                             encontrado=true
-                            navigate('/')
+                            navigate('/homepage')
                         }
                     }
                     i++;
@@ -61,19 +63,15 @@ function LoginDesk() {
                             <div className='div-form-desk'>
                                 <form id='formulario' className='form-desk' ref={Form}  >
                                     <WrapperlInput msn="Email:" name={"email"}  type="email" placeholder="user@gmail.com"/>
-                                    <WrapperlInput msn="Password:" name={"password"}  type="password" placeholder="********"/>
+                                    <WrapperlInput msn="Password:" name={"contraseña"}  type="password" placeholder="********"/>
                                     <button className='entrar'  onClick={handlerClick} >
                                         Entrar
                                         <img className='ir' src={ir}/>
                                     </button>
-                                    {/* <button onClick={handlerClick} className='entrar' >
-                                        Entrar
-                                        <img className='ir' src={ir}/>
-                                    </button> */}
                                 </form>
                             </div>
                             <div className='direcciones'>
-                                <label className='registrate'>¿No tienes cuenta? <Link to="/register" className='link'>Registrate</Link></label>
+                                <label className='registrate'>¿No tienes cuenta? <Link to="/filtro" className='link'>Registrate</Link></label>
                                 <div className='direcciones-sub'>
                                     <Link to="/recuperarContraseña" className='link'>Recuperar contraseña</Link>
                                 </div>

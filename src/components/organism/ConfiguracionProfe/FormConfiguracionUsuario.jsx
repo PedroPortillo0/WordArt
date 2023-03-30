@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 import "../../../assets/styles/ConfiguracionProf/FromConfiguracionProf.css";
 import retroceder from '../../../assets/img/Regresar.png';
-import Perfil1 from '../../../assets/img/perfilusuario.png';
+import iconUser from '../../../assets/img/icons/user.png'
+
 import ir from '../../../assets/img/icons/irconfiguracion.png';
 import Label from '../../atoms/LabelLogin';
-
+import Button from '../../atoms/ButtonLogin';
+import { Link } from 'react-router-dom';
 const StyledContainer = styled.div` //padre listo
 width:100%;
 height:100vh;
 display:flex;
 flex-direction: column;
 background-color: hsl(0, 0%, 91%) ;
-border: 2px solid red;
 `;
 const Styledcontainerhijo1 = styled.div` //hijo1  listo
 width:100%;
@@ -54,11 +55,17 @@ flex-direction: column;
 
 `;
 const DivfotoPerfil = styled.div` //hijo2,perfil listo
-width:20%;
-height:100%;
-align-items: center;
-justify-content: flex-end;
-display: flex;
+    width:20%;
+    height:100%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    .foto{
+        width:40%;
+        height:80%;
+
+    }
+
 `;
 const Divfototexto = styled.div` //hijo2,fototexto listo
 width:20%;
@@ -75,6 +82,7 @@ const DivDatosCuenta = styled.div`// hijo2-hijo2-datoscuenta listo
     display: flex;
     flex-direction: column;
     align-content: space-around;
+
 `;
 const DivDatos = styled.div`
     width:35%;
@@ -83,6 +91,7 @@ const DivDatos = styled.div`
     font-weight: bold;
     display: flex; 
     align-items: center;
+
 `;
 const DivInfo = styled.div` //hijo2,fototexto listo
     width:100%;
@@ -101,14 +110,34 @@ const Div1 = styled.div`
         color: #909090;
     }
 `;
-
+const Divbutton = styled.div`
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    .button{
+        width:100%;
+        height:100%;
+        background: linear-gradient(90deg, rgba(233, 0, 0, 0.4) 0.29%, rgba(233, 0, 0, 0.4), rgba(233, 0, 0, 0.4) 100%);
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.33);
+        color: #7B0000;
+        border: 2px solid;
+    }
+`;
+    
 function FromConfiguracionUsuario() {
+    const lavr=(e)=>{
+        e.preventDefault();
+        
+        
+    }
     return ( 
         <from>
             <StyledContainer>
                 <Styledcontainerhijo1>
                     <Divretroceder>
-                        <a href="/login">
+                        <a href="/homepage">
                             <img src={retroceder} alt="imagen de la empresa " />
                         </a>
                     </Divretroceder>
@@ -119,7 +148,7 @@ function FromConfiguracionUsuario() {
                 <StyledContainerhijo2>
                     <DivInformacion>
                         <DivfotoPerfil>
-                            <img src={Perfil1} alt="foto de perfil" />
+                            <img src={iconUser} className="foto" alt="foto de perfil" />
                         </DivfotoPerfil>
                         <Divfototexto>
                             <div><Label  msn="Christian Romeo"/> </div>
@@ -181,9 +210,10 @@ function FromConfiguracionUsuario() {
                                         <img src={ir} alt="ir" />
                                     </div>
                                 </Div1>
-
                             </DivInfo>
-
+                            <Divbutton>
+                                <Link to={"/login"}><Button className='button' onclick={lavr} msg={"salir"} /> </Link>
+                            </Divbutton>
                         </DivDatosCuenta>
                     </DivInformacion2>
                 </StyledContainerhijo2>

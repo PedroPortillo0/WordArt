@@ -155,7 +155,9 @@ function FormPintura() {
                 <DivHijo1>
                     <div className='hijo1-1'>
                         <div className='ContainerImagen'>
-                            <img className='imagen' src={Retroceder} alt="regresar" />
+                            <a href="/homepage">
+                                <img className='imagen' src={Retroceder} alt="regresar" />
+                            </a>
                         </div>
                         <div className='ContainerResult'>
                             <div>

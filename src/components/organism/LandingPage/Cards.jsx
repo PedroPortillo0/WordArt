@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import CardMol1 from "../../molecules/CardMol1";
 import CardMol2 from "../../molecules/CardMol2";
 import CardMol3 from "../../molecules/CardMol3";
