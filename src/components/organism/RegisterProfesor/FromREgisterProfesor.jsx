@@ -11,7 +11,7 @@ import { useRef } from 'react';
 import {Navigate, useNavigate} from 'react-router-dom';
 
 function FromRegisterProfesor() {
-    const endpoint = "http://3.211.187.52/profesor/create";
+    const endpoint = "http://34.205.213.60/profesor/create";
 
     const Form = useRef()
     const navigate = useNavigate();

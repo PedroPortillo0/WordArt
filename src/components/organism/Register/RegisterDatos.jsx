@@ -7,7 +7,7 @@ import {Navigate, useNavigate} from 'react-router-dom';
 
 function RegisterDatos() {
     
-    const endpoint = "http://3.211.187.52/register/create";
+    const endpoint = "http://34.205.213.60/register/create";
 
     const Form = useRef()
     const navigate = useNavigate();

@@ -8,7 +8,7 @@ import {Navigate, useNavigate} from 'react-router-dom';
 
 function RegisterDatos() {
 
-    const endpoint = "http://3.211.187.52/profesor/create";
+    const endpoint = "http://34.205.213.60/profesor/create";
 
     const Form = useRef()
     const navigate = useNavigate();
@@ -18,11 +18,11 @@ function RegisterDatos() {
         const newForm = new FormData(Form.current);
 
         if(
-            newForm.get("nombreP") === null || 
-            newForm.get("apellidoP") === null || 
-            newForm.get("gmailP")=== null||
-            newForm.get("contraseñaP")=== null||
-            newForm.get("telefonoP")=== null 
+            newForm.get("nombreP") === "" || 
+            newForm.get("apellidoP") === "" || 
+            newForm.get("gmailP")=== "" ||
+            newForm.get("contraseñaP")=== ""||
+            newForm.get("telefonoP")=== ""
         ){
             alert("campos vacios");
         }else{
@@ -51,7 +51,6 @@ function RegisterDatos() {
     };
 
     return ( 
-        <form ref={Form}>
                 <div className='container-datos'>
                     <div>
                     <div className='content-title'>
@@ -59,7 +58,7 @@ function RegisterDatos() {
                         <span>Cuenta</span>
                     </div>
                     <div className='content-form' >
-                        <form >
+                        <form ref={Form}>
                             <WrapperlInput msn="Nombre :" name={"nombreP"}  type="text" placeholder="John123"/>
                             <WrapperlInput msn="Apellido :" name={"apellidoP"}  type="text" placeholder="Bacab"/>
                             <WrapperlInput msn="Numero telefonico :" name={"telefonoP"} type="text" placeholder="555 555 55 55"/>
@@ -73,7 +72,6 @@ function RegisterDatos() {
                     </div>
                 </div>
             </div>
-        </form>
      );
 }
 export default RegisterDatos;

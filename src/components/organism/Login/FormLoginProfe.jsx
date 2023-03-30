@@ -9,29 +9,29 @@ import { useRef } from 'react';
 import {Navigate, useNavigate} from 'react-router-dom';
 
 
-function LoginDesk() {
+function FormLoginProfe() {
 
     const navigate = useNavigate();
 
     const Form = useRef()
 
-    const handlerClick=(e)=>{
+    const handlerClickf=(e)=>{
         e.preventDefault();
         const newForm= new FormData (Form.current)
-        if (newForm.get('email')==''){
+        if (newForm.get('gmailP')==''){
             // alert('El campo nobre de usuario no puede estar vacio')
-        }else if(newForm.get('contraseña')==''){
+        }else if(newForm.get('contraseñaP')==''){
             // alert('El campo contraseña no puede estar vacio')
         }else{
-            fetch('http://34.205.213.60/register/getAll')
+            fetch('http://34.205.213.60/profesor/getAll')
             .then(response=>response.json())
             .then(data=>{
-                const email=data
+                const gmailP=data
                 let i=0;
                 let encontrado=false
-                while(!encontrado&&i<email.length){
-                    if (email[i].email==newForm.get('email')){
-                        if(email[i].contraseña==newForm.get('contraseña')){
+                while(!encontrado&&i<gmailP.length){
+                    if (gmailP[i].gmailP==newForm.get('gmailP')){
+                        if(gmailP[i].contraseña==newForm.get('contraseñaP')){
                             encontrado=true
                             navigate('/homepage')
                         }
@@ -62,9 +62,9 @@ function LoginDesk() {
                             <div className='all-text-desk'>hermoso</div>
                             <div className='div-form-desk'>
                                 <form id='formulario' className='form-desk' ref={Form}  >
-                                    <WrapperlInput msn="Email:" name={"email"}  type="email" placeholder="user@gmail.com"/>
-                                    <WrapperlInput msn="Password:" name={"contraseña"}  type="password" placeholder="********"/>
-                                    <button className='entrar'  onClick={handlerClick} >
+                                    <WrapperlInput msn="Email:" name={"gmailP"}  type="email" placeholder="user@gmail.com"/>
+                                    <WrapperlInput msn="Password:" name={"contraseñaP"}  type="password" placeholder="********"/>
+                                    <button className='entrar'  onClick={handlerClickf} >
                                         Entrar
                                         <img className='ir' src={ir}/>
                                     </button>
@@ -93,4 +93,4 @@ function LoginDesk() {
      );
 }
 
-export default LoginDesk;
+export default FormLoginProfe;

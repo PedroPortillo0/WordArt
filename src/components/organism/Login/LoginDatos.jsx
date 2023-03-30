@@ -24,7 +24,7 @@ function LoginDatos() {
         }else if(newForm.get('password')==''){
             setState('El campo contraseña no puede estar vacio')
         }else{
-            fetch('http://52.0.218.249/register/getAll')
+            fetch('http://34.205.213.60/register/getAll')
             .then(response=>response.json())
             .then(data=>{
                 const email=data

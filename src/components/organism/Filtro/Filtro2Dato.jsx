@@ -2,7 +2,7 @@ import '../../../assets/styles/Filtro/Filtro.css'
 
 import { Link } from 'react-router-dom';
 
-function Filtro({profesor, alumno}) {
+function Filtro2Dato({profesor, alumno}) {
     return ( 
     <div className="container-filtro">
         <div>
@@ -11,10 +11,10 @@ function Filtro({profesor, alumno}) {
                     Si eres estudiante, inicia sesión aquí.
                 </div>
                 <div className='filtro-div2'>
-                    Estudiantes registrados en cursos por favor registrate aquí
+                    Estudiantes registrados en cursos por favor inicie sesión aquí
                 </div> 
                 <div className='CB'>
-                    <Link to="/register" className='iniciarSesion-filtro'>registrate</Link>
+                    <Link to="/login" className='iniciarSesion-filtro'>Iniciar Sesión</Link>
                 </div>
             </div>
             <div className='linea-filtro'/>
@@ -23,14 +23,14 @@ function Filtro({profesor, alumno}) {
                     Para educadores.
                 </div>
                 <div className='filtro-div2'>
-                    Si eres un profesor, registrate aquí
+                    Si eres un profesor, inicie sesión aquí
                 </div> 
                 <div className='CB'>
-                    <Link to="/registroProfesores"  className='iniciarSesion-filtro'>registrate</Link>
+                    <Link to="/loginProfesores"  className='iniciarSesion-filtro'>Iniciar Sesión</Link>
                 </div>
             </div>
         </div>
     </div> );
 }
 
-export default Filtro;
+export default Filtro2Dato;

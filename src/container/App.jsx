@@ -16,7 +16,8 @@ import PasarelaDePagos from '../pages/PasarelaDePagos';
 import MenuProfesores from '../pages/MenuProfesores';
 import RegistroProfesor from '../pages/RegistroProfesor';
 import Filtro from '../pages/Filtro';
-
+import LoginProfe from '../pages/LoginProfe';
+import Filtro2 from '../components/organism/Filtro/Filtro2';
 
 function App() {
     return ( 
@@ -38,6 +39,9 @@ function App() {
                 <Route path="/menuProfesores" element={<MenuProfesores/>}/>
                 <Route path="/registroProfesores" element={<RegistroProfesor/>}/>
                 <Route path="/filtro" element={<Filtro/>}/>
+                <Route path="/loginprofesor" element={<LoginProfe/>}/>
+                <Route path="/filtro2" element={<Filtro2/>}/>
+
 
 
 
