@@ -22,7 +22,6 @@ const DivHijo1 = styled.div` //hijo1
     height:10%;
     display:flex;
     justify-content: center;
-    border: 2px solid;
     .hijo1-1{
         width:70%;
         height:100%;

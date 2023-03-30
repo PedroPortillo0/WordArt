@@ -1,5 +1,6 @@
 import LabelGeneral from '../../atoms/LabelGeneral';
 import WrapperlInput from '../../molecules/WrapperInput';
+import LogoGeneral from  '../../atoms/LogoGeneral'
 
 
 import '../../../assets/styles/Register/Register.css';
@@ -53,18 +54,18 @@ function RegisterDesk() {
     };
 
     return ( 
-
-            <div className="register">
-                <div>
-                    <img src={fondoRegister} className="fondo-register"/>
-                </div>
-                <div className='div-fondo'/>  
-                <div className="register-container-1">
-                    <div className='vacio'></div>
-                    <div className='container-datos-register'>
-                    <div className='content-title-register'>
-                        <LabelGeneral msg="Crear "></LabelGeneral>
-                        <span>Cuenta</span>
+        <div className="register">
+            <div>
+                <img src={fondoRegister} className="fondo-register"/>
+            </div>
+            <div className='div-fondo'/>  
+            <div className="register-container-1">
+                <div className='vacio'></div>
+                <div className='container-datos-register'>
+                <div className='content-title-register'>
+                    <LogoGeneral/>
+                    <LabelGeneral msg="Crear "></LabelGeneral>
+                    <span>Cuenta</span>
                     </div>
                     <div className='content-form'>
                         <form id='formulario' ref={Form}>
@@ -81,8 +82,6 @@ function RegisterDesk() {
                 </div>   
             </div>
         </div>
-
-
      );
 }
 
