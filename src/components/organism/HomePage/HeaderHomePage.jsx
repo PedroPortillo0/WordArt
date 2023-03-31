@@ -9,9 +9,11 @@ function HeaderHomePage() {
                 <LogoGeneral/>
                 <div>
                     <Link to="/configuracion2"><img className='settingsHP' src={settings}/></Link>
+                    
                 </div>
             </div>
         </div>
+
      );
 }
 

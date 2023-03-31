@@ -51,10 +51,10 @@ function FormLoginProfe() {
               })
                 swal({
                 
-                    text: `Bienvenido `,
+                    text: `Bienvenido profesor  `,
                     icon: 'success',
                 })
-                navigate("/Homepage");
+                navigate("/MenuProfesores");
             } else {
     
               Swal({

@@ -42,7 +42,7 @@ function FromConfiguracionUsuario() {
                         />            
                     </div>
                     <div className='content-button-salir'>
-                        <ButtonSalir to="/login" className="buttonSalir"/>
+                        <ButtonSalir to="/filtro2" className="buttonSalir"/>
                     </div>
                 </div>
             </div>

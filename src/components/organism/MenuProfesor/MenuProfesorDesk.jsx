@@ -11,10 +11,10 @@ import bursts from '../../../assets/img/icons/bursts.png'
 import cash from '../../../assets/img/icons/cash.png'
 import '../../../assets/styles/MenuProfesor/MenuProfesor.css'
 import { Link } from 'react-router-dom';
+
 function MenuProfesorDesk() {
     return ( 
         <div className="container-menu-profesor-desk">
-            <ConfigRegresar src={regresar} msg=""/>
             <div className='container-todo'>
                 <div className='container-profile'>
                     <div className='content-img-profile'>
@@ -34,13 +34,13 @@ function MenuProfesorDesk() {
                 <Separador/>
                 <div className='bottons'>
                     <div className='container-botton'>
-                        <Link to="" className='link'>
-                            <label>Profesores</label>
+                        <Link to="/configuracion1" className='link'>
+                            <label>Configuracion</label>
                             <img src={teacherRed}/>
                         </Link>                                                                                        
                     </div>
                     <div className='container-botton'>
-                        <Link to="" className='link2'>
+                        <Link to="/misCursosProfesor" className='link2'>
                             <label>Mis cursos</label>
                             <img src={bursts}/>
                         </Link>
@@ -50,9 +50,6 @@ function MenuProfesorDesk() {
                             <label>Mis despositos</label>
                             <img src={cash}/>
                         </Link>
-                    </div>
-                    <div className='content-button-salir'>
-                        <ButtonSalir to="/login" className="buttonSalir"/>
                     </div>
                 </div>
             </div>

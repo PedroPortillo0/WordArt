@@ -26,7 +26,7 @@ function Filtro2Dato({profesor, alumno}) {
                     Si eres un profesor, inicie sesión aquí
                 </div> 
                 <div className='CB'>
-                    <Link to="/loginProfesores"  className='iniciarSesion-filtro'>Iniciar Sesión</Link>
+                    <Link to="/loginProfesor"  className='iniciarSesion-filtro'>Iniciar Sesión</Link>
                 </div>
             </div>
         </div>

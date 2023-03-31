@@ -6,8 +6,46 @@ import ConfigDatosDeskGen from '../../molecules/ConfigDatosDeskGen';
 import regresar from '../../../assets/img/icons/regresar.png'
 import iconUser from '../../../assets/img/icons/user.png'
 import "../../../assets/styles/Configuracion/FromConfiguracionProf.css";
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+// import {useSelector} from 'react-redux';
+
+
 function FromConfiguracionProf() {
+    // const profe = useSelector(state => state.events);
+    
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+          const response = await fetch("http://34.205.213.60/profesor/getAll");
+          const result = await response.json();
+          setData(result);
+        }
+        fetchData();
+      }, []);
+
+    //   function validarUsuario(register,gmailP, contraseñaP) {
+    //     let user = null;
+    //     let flag = false;
+    //     for (let i = 0; i < register.length && !flag; i++) {
+    //       if (register[i].gmailP === gmailP && register[i].contraseñaP === contraseñaP) {
+    //         user = register[i]
+    //         flag = true;
+    //       }
+    //     }
+    //     return user;
+    //   }
+    // function xd(){
+    //     let user=null;
+    //     let flag=false;
+    //     for(let i=0;i<data.length && !flag; i++){
+    //         if(data[i].gmailP===profe){
+    //             user=data[i]
+    //             flag=true;
+    //         }
+    //     }
+    //     return user;
+    // }
+
     return ( 
         <from>
             <div className='container-config-user-desk'>
@@ -19,7 +57,11 @@ function FromConfiguracionProf() {
                             <img src={iconUser} className="foto" alt="foto de perfil" />
                         </div>
                         <div className='container-name-typ'>
-                            <div><Label  msn="Alan Romeo"/> </div>
+                            <div>
+                                {data.map((item)=>(
+                                    <Label  msn={item.nombreP}/>
+                                ))} 
+                            </div>
                             <div><Label  msn="Profesor"/></div>
                         </div>
                     </div>
@@ -39,7 +81,7 @@ function FromConfiguracionProf() {
                             write2="9733221220"/>            
                     </div>
                     <div className='content-button-salir'>
-                        <ButtonSalir to="/loginprofesor" className="buttonSalir"/>
+                        <ButtonSalir to="/filtro2" className="buttonSalir"/>
                     </div>
                 </div>
             </div>
