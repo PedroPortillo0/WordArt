@@ -7,41 +7,68 @@ import ir from '../../../assets/img/icons/ir.png'
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import {Navigate, useNavigate} from 'react-router-dom';
-
+import Swal from 'sweetalert';
+import { useDispatch } from 'react-redux';
 
 function FormLoginProfe() {
-
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const Form = useRef()
+  const endPoint = 'http://34.205.213.60/profesor/getAll';
+  const Form = useRef()
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+  function validarUsuario(register,gmailP, contraseñaP) {
+      let user = null;
+      let flag = false;
+      for (let i = 0; i < register.length && !flag; i++) {
+        if (register[i].gmailP === gmailP && register[i].contraseñaP === contraseñaP) {
+          user = register[i]
+          flag = true;
+        }
+      }
+      return user;
+  }
+    const handlerClick = () => {
+        const newForm = new FormData(Form.current);
+        fetch(endPoint, options)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data)
+            let gmailP = newForm.get("gmailP")
+            let contraseñaP = newForm.get("contraseñaP")
+            let user = validarUsuario(data,gmailP, contraseñaP);
+            console.log(JSON.stringify(user))
+            if (user != null)  {          
+              
+              dispatch({
+                type: "ADD_EVENT",
+                value: user
+              })
+                swal({
+                
+                    text: `Bienvenido `,
+                    icon: 'success',
+                })
+                navigate("/Homepage");
+            } else {
+    
+              Swal({
+                title: 'EROR',
+                text: `profesor no encontrado. intenta de nuevo`,
+                icon: 'error',
+              });
+    
+            }
+          });
+    };
 
-    const handlerClickf=(e)=>{
-        e.preventDefault();
-        const newForm= new FormData (Form.current)
-        if (newForm.get('gmailP')==''){
-            // alert('El campo nobre de usuario no puede estar vacio')
-        }else if(newForm.get('contraseñaP')==''){
-            // alert('El campo contraseña no puede estar vacio')
-        }else{
-            fetch('http://34.205.213.60/profesor/getAll')
-            .then(response=>response.json())
-            .then(data=>{
-                const gmailP=data
-                let i=0;
-                let encontrado=false
-                while(!encontrado&&i<gmailP.length){
-                    if (gmailP[i].gmailP==newForm.get('gmailP')){
-                        if(gmailP[i].contraseña==newForm.get('contraseñaP')){
-                            encontrado=true
-                            navigate('/homepage')
-                        }
-                    }
-                    i++;
-                }
-            })
-        }
-    };
 
+    
 
 
 
@@ -64,7 +91,7 @@ function FormLoginProfe() {
                                 <form id='formulario' className='form-desk' ref={Form}  >
                                     <WrapperlInput msn="Email:" name={"gmailP"}  type="email" placeholder="user@gmail.com"/>
                                     <WrapperlInput msn="Password:" name={"contraseñaP"}  type="password" placeholder="********"/>
-                                    <button className='entrar'  onClick={handlerClickf} >
+                                    <button className='entrar'  onClick={handlerClick} >
                                         Entrar
                                         <img className='ir' src={ir}/>
                                     </button>

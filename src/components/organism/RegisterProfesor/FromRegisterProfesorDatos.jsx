@@ -44,7 +44,7 @@ function RegisterDatos() {
                 .then((data) => {
                
                   alert(JSON.stringify(data))
-                  navigate('/login')
+                  navigate('/filtro2')
                  
                 });   
         }

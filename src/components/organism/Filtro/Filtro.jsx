@@ -26,7 +26,7 @@ function Filtro({profesor, alumno}) {
                     Si eres un profesor, registrate aquí
                 </div> 
                 <div className='CB'>
-                    <Link to="/registroProfesores"  className='iniciarSesion-filtro'>registrate</Link>
+                    <Link to="/registroProfesores"  className='iniciarSesion-filtro'>hola</Link>
                 </div>
             </div>
         </div>

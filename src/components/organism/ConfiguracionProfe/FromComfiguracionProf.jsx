@@ -104,6 +104,21 @@ const Div1 = styled.div`
         color: #909090;
     }
 `;
+const Divbutton = styled.div`
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    .button{
+        width:100%;
+        height:100%;
+        background: linear-gradient(90deg, rgba(233, 0, 0, 0.4) 0.29%, rgba(233, 0, 0, 0.4), rgba(233, 0, 0, 0.4) 100%);
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.33);
+        color: #7B0000;
+        border: 2px solid;
+    }
+`;
 
 function FromConfiguracionProf() {
     return ( 
@@ -186,6 +201,9 @@ function FromConfiguracionProf() {
                                 </Div1>
 
                             </DivInfo>
+                            <Divbutton>
+                                <Link to={"/filtro2"}><Button className='button' msg={"salir"} /> </Link>
+                            </Divbutton>
 
                         </DivDatosCuenta>
                     </DivInformacion2>

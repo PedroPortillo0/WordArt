@@ -1,8 +1,14 @@
 import FormLoginProfe from "../components/organism/Login/FormLoginProfe";
-
+import FormLoginProfeDatos from "../components/organism/Login/FormLoginProfedatos";
+import FondoMovilLogo from "../components/molecules/FondoMovilLogo";
 function LoginProfe() {
     return ( 
-        <FormLoginProfe/>
+        <>
+            <FondoMovilLogo/>
+            <FormLoginProfe/>
+            <FormLoginProfeDatos/>
+        </>
+        
      );
 }
 

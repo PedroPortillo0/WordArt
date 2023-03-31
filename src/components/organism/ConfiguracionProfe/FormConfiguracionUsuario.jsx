@@ -100,6 +100,15 @@ const DivInfo = styled.div` //hijo2,fototexto listo
     border-top-left-radius: 10px;
     background-color: #ffffff;
 `;
+const DivInfo2 = styled.div` //hijo2,fototexto listo
+    width:100%;
+    height:10%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+`;
 const Div1 = styled.div`
     width:100%;
     height:50%;
@@ -127,11 +136,8 @@ const Divbutton = styled.div`
 `;
     
 function FromConfiguracionUsuario() {
-    const lavr=(e)=>{
-        e.preventDefault();
-        
-        
-    }
+
+
     return ( 
         <from>
             <StyledContainer>
@@ -187,7 +193,7 @@ function FromConfiguracionUsuario() {
                             <DivDatos>
                                 <Label  msn="Datos personales"/>
                             </DivDatos>
-                            <DivInfo>
+                            <DivInfo2>
                                 <Div1>
                                     <div>
                                         <Label  msn="Nombre y apellido"/>
@@ -199,20 +205,9 @@ function FromConfiguracionUsuario() {
                                         <img src={ir} alt="ir" />
                                     </div>
                                 </Div1>
-                                <Div1>
-                                    <div>
-                                        <Label  msn="Telefono"/>
-                                    </div>
-                                    <div className='correo'>
-                                        <Label  msn="9633221212"/>
-                                    </div>
-                                    <div>
-                                        <img src={ir} alt="ir" />
-                                    </div>
-                                </Div1>
-                            </DivInfo>
+                            </DivInfo2>
                             <Divbutton>
-                                <Link to={"/login"}><Button className='button' onclick={lavr} msg={"salir"} /> </Link>
+                                <Link to={"/filtro2"}><Button className='button' msg={"salir"} /> </Link>
                             </Divbutton>
                         </DivDatosCuenta>
                     </DivInformacion2>

@@ -7,42 +7,65 @@ import ir from '../../../assets/img/icons/ir.png'
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import {Navigate, useNavigate} from 'react-router-dom';
-
+import Swal from 'sweetalert';
+import { useDispatch } from 'react-redux';
 
 function LoginDesk() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
-    const Form = useRef()
-
-    const handlerClick=(e)=>{
-        e.preventDefault();
-        const newForm= new FormData (Form.current)
-        if (newForm.get('email')==''){
-            // alert('El campo nobre de usuario no puede estar vacio')
-        }else if(newForm.get('contraseña')==''){
-            // alert('El campo contraseña no puede estar vacio')
-        }else{
-            fetch('http://34.205.213.60/register/getAll')
-            .then(response=>response.json())
-            .then(data=>{
-                const email=data
-                let i=0;
-                let encontrado=false
-                while(!encontrado&&i<email.length){
-                    if (email[i].email==newForm.get('email')){
-                        if(email[i].contraseña==newForm.get('contraseña')){
-                            encontrado=true
-                            navigate('/homepage')
-                        }
-                    }
-                    i++;
-                }
-            })
-        }
-    };
-
-
+  const endPoint = 'http://34.205.213.60/register/getAll';
+  const Form = useRef()
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+  function validarUsuario(register,email, contraseña) {
+      let user = null;
+      let flag = false;
+      for (let i = 0; i < register.length && !flag; i++) {
+        if (register[i].email === email && register[i].contraseña === contraseña) {
+          user = register[i]
+          flag = true;
+        }
+      }
+      return user;
+  }
+    const handlerClick = () => {
+        const newForm = new FormData(Form.current);
+        fetch(endPoint, options)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data)
+            let email = newForm.get("email")
+            let contraseña = newForm.get("contraseña")
+            let user = validarUsuario(data,email, contraseña);
+            console.log(JSON.stringify(user))
+            if (user != null)  {          
+              
+              dispatch({
+                type: "ADD_EVENT",
+                value: user
+              })
+                swal({
+                
+                    text: `Bienvenido `,
+                    icon: 'success',
+                })
+                navigate("/Homepage");
+            } else {
+    
+              Swal({
+                title: 'EROR',
+                text: `usuario no encontrado. intenta de nuevo`,
+                icon: 'error',
+              });
+    
+            }
+          });
+    };
 
 
     return ( 
@@ -64,7 +87,7 @@ function LoginDesk() {
                                 <form id='formulario' className='form-desk' ref={Form}  >
                                     <WrapperlInput msn="Email:" name={"email"}  type="email" placeholder="user@gmail.com"/>
                                     <WrapperlInput msn="Password:" name={"contraseña"}  type="password" placeholder="********"/>
-                                    <button className='entrar'  onClick={handlerClick} >
+                                    <button className='entrar' onClick={handlerClick}  >
                                         Entrar
                                         <img className='ir' src={ir}/>
                                     </button>
