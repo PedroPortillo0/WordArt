@@ -1,7 +1,12 @@
-import FromConfiguracionUsuario from "../components/organism/ConfiguracionProfe/FormConfiguracionUsuario";
+import FromConfiguracionUsuario from "../components/organism/Configuracion/FormConfiguracionUsuario";
+import ConfigMovUser from '../components/organism/Configuracion/ConfiguracionMobileUser'
 function ConfiguracionUsuario() {
     return (  
-        <FromConfiguracionUsuario/>
+       <>
+            <FromConfiguracionUsuario/>
+            <ConfigMovUser/>
+       </> 
+        
     );
 }
 

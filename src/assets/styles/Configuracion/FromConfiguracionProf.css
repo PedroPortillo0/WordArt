@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+.container-configuracion-mobile{
+    padding: 0 15px;
+}
+
+.header-administracion-cuenta{
+    text-decoration: none;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.header-administracion-cuenta img{
+    width: 80%;
+    margin-right: 2%;
+}
+.header-administracion-cuenta div{
+    font-size: 18px;
+}
+
+.profile-picture{
+    margin-top: 2%;
+}
+.profile-picture h2{
+    margin-left: 8%;
+}
+.profile-picture div{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.profile-picture img{
+    width: 20%;
+}
+.datos-cuenta{
+    margin-top: 2%;
+}
+.datos-cuenta h2{
+    margin-left: 8%;
+}
+.datos-cuenta div{
+    width: 100%;
+    height: 3em;
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+.datos-cuenta h6{
+    font-weight: 800;
+    margin-left: 8%;
+    font-size: 13px;
+    margin-top: 3%
+}
+.datos-cuenta div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D9D9D9;
+    padding: 0 34px;
+}
+.datos-cuenta div div img{
+    width: 4%;
+}
+.datos-personales{
+    margin-top: 2%;
+}
+.datos-personales h2{
+    margin-left: 8%;
+}
+.datos-personales div{
+    width: 100%;
+    height: 3em;
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+.datos-personales h6{
+    font-weight: 800;
+    margin-left: 8%;
+    font-size: 13px;
+    margin-top: 3%
+}
+.datos-personales div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D9D9D9;
+    padding: 0 34px;
+}
+.datos-personales div div img{
+    width: 4%;
+}
+.configuracion-button-salir{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonSalir{
+    color: #7B0000;
+    background: rgba(233, 0, 0, 0.4);;
+    padding: 10px 60px;
+    border-radius: 1em;
+    text-decoration: none;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.container-config-prof-desk{
+    display: none;
+}
+.container-config-user-desk{
+    display: none;
+}
+
+@media screen and (min-width: 770px){
+    .container-configuracion-mobile{
+        display: none;
+    }
+
+    .container-config-prof-desk{
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 91%) ;
+    }
+    .container-config-user-desk{
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 91%) ;
+    }
+    .header-administracion-cuenta{
+        width: 40%;
+        margin-left: 7%;
+    }
+    
+
+
+    .container-information-config-desk{
+        width:100%;
+        height:100%;
+        display:flex ;
+        flex-direction: column;
+        padding: 0 100px;
+    }
+    .container-information-config-desk .container-profile{
+        width:100%;
+        height:25%;
+        align-items: center;
+        display: flex;
+    }
+    .container-information-config-desk .container-profile .container-foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:5em;
+        margin-left: 7%;
+        margin-right: 5%;
+
+    }
+    .container-information-config-desk .container-profile div img{
+        width:90px;
+    }
+
+    .container-information-config-desk .container-information .content-information{
+        margin-top: 7%;
+    }
+    .container-information-config-desk .container-information .content-information h2{
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .container-information-config-desk .container-information .content-information .box{
+        background-color: white;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .container-information-config-desk .container-information .content-information .box img,
+    .container-information-config-desk .container-information .content-information .box1 img{
+        width: 4%;
+        
+    }
+    .container-information-config-desk .container-information .content-information .box1{
+        background-color: white;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-button-salir{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttonSalir{
+        width: 30%;
+        color: #7B0000;
+        background: rgba(233, 0, 0, 0.4);;
+        padding: 10px 0px;
+        border-radius: 1em;
+        text-decoration: none;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (min-width:600px) and (max-width: 800px){
+    .header-administracion-cuenta img{
+        width: 10%;
+    }
+}
+@media  screen and (max-width:420px) {
+    *{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:1075px){
+    .header-administracion-cuenta{
+        width: 20%;
+        margin-left: 7%;
+    }
+    .container-information-config-desk{
+        padding: 0 250px;
+    }
+
+    .container-information-config-desk .container-information .content-information .box img,
+    .container-information-config-desk .container-information .content-information .box1 img{
+        width: 3%;
+        
+    }
+}

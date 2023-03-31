@@ -13,12 +13,12 @@ import Pintura from '../pages/Pintura';
 import PorPagar from '../pages/PorPagar';
 import HomePage from '../pages/HomePage';
 import PasarelaDePagos from '../pages/PasarelaDePagos';
-import MenuProfesores from '../pages/MenuProfesores';
 import RegistroProfesor from '../pages/RegistroProfesor';
 import Filtro from '../pages/Filtro';
 import LoginProfe from '../pages/LoginProfe';
 import Filtro2 from '../components/organism/Filtro/Filtro2';
 import Filtro2Dato from '../components/organism/Filtro/Filtro2Dato';
+import MenuProfesores from '../pages/MenuProfesores';
 import { Provider } from 'react-redux'
 import Store from '../redux/store/Store';
 
@@ -37,11 +37,11 @@ function App() {
                     <Route path="/configuracion2" element={<ConfiguracionUsuario/>}/>   
                     <Route path="/resultadoMusica" element={<Musica/>}/>  
                     <Route path="/resultadoTeatro" element={<Teatro/>}/> 
+                    <Route path="/MenuProfesores" element={<MenuProfesores/>}/> 
                     <Route path="/resultadoDanza" element={<Danza/>}/>
                     <Route path="/resultadoPintura" element={<Pintura/>}/>
                     <Route path="/PorPagar" element={<PorPagar/>}/>
                     <Route path="/pagar" element={<PasarelaDePagos/>}/>
-                    <Route path="/menuProfesores" element={<MenuProfesores/>}/>
                     <Route path="/registroProfesores" element={<RegistroProfesor/>}/>
                     <Route path="/filtro" element={<Filtro/>}/>
                     <Route path="/loginprofesor" element={<LoginProfe/>}/>

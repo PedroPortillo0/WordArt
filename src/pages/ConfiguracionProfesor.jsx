@@ -1,7 +1,13 @@
-import FromConfiguracionProf from "../components/organism/ConfiguracionProfe/FromComfiguracionProf";
+import FromConfiguracionProf from "../components/organism/Configuracion/FromComfiguracionProf";
+import ConfigMobTeacher from '../components/organism/Configuracion/ConfiguracionMobileTeacher'
+
 function ConfiguracionProfesor() {
     return (  
-        <FromConfiguracionProf/>
+        <>
+            <FromConfiguracionProf/>
+            <ConfigMobTeacher/>
+        </>
+        
     );
 }
 
