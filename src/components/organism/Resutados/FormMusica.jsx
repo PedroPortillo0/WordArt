@@ -151,14 +151,17 @@ const DivIr = styled.div`
 `;
 
 function FormMusica() {
+    const llevar =()=>{
+    }
     return ( 
             <StyledContainer>
                 <DivHijo1>
                     <div className='hijo1-1'>
                         <div className='ContainerImagen' >
-                            <a href="/homepage">
+                            <Link to={"/homepage"}>
                                 <img className='imagen' src={Retroceder} alt="regresar" />
-                            </a>
+                            </Link>
+                    
                         </div>
                         <div className='ContainerResult'>
                             <div>
@@ -193,7 +196,12 @@ function FormMusica() {
                                         <LabelGeneral className="labelGeneral" msg="300 MX$"/>
                                     </div>
                                     <div className='buttun'>
+                                        
                                         <Button className='button' msg={"ir"}/>
+                                        
+                                            
+                                       
+                                        
                                     </div>
                                 </DivIr>
                             </DivContenido>
@@ -246,7 +254,9 @@ function FormMusica() {
                                         <LabelGeneral className="labelGeneral" msg="900 MX$"/>
                                     </div>
                                     <div className='buttun'>
+                                        
                                         <Button className='button' msg={"ir"}/>
+                                        
                                     </div>
                                 </DivIr>
 

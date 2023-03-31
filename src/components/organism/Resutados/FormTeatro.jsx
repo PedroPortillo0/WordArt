@@ -7,6 +7,7 @@ import Button from '../../atoms/ButtonLogin';
 import Principiante from '../../../assets/img/Teatro/Principiante.png';
 import Medio from '../../../assets/img/Teatro/Medio.png';
 import Avanzado from '../../../assets/img/Teatro/Avanzado.png';
+import { Link } from 'react-router-dom';
 
 const StyledContainer = styled.div` //padre listo
 width:100%;
@@ -155,9 +156,10 @@ function FormTeatro() {
                 <DivHijo1>
                     <div className='hijo1-1'>
                         <div className='ContainerImagen'>
-                            <a href="/homepage">
+                            <Link to={"/homepage"}>
                                 <img className='imagen' src={Retroceder} alt="regresar" />
-                            </a>
+                            </Link>
+                            
                         </div>
                         <div className='ContainerResult'>
                             <div>

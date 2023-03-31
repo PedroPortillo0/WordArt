@@ -28,8 +28,20 @@ import ejemplo6 from '../../../assets/img/recomendaciones/6.png'
 import ejemplo7 from '../../../assets/img/recomendaciones/7.png'
 import ejemplo8 from '../../../assets/img/recomendaciones/8.png'
 import ejemplo9 from '../../../assets/img/recomendaciones/9.png'
-
+import { useEffect, useState } from "react";
+import {useSelector} from 'react-redux';
 function URDesk() {
+    const user = useSelector(state => state.user)
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+          const response = await fetch("http://34.205.213.60/profesor/getAll");
+          const result = await response.json();
+          setData(result);
+        }
+        fetchData();
+      }, []);
     return ( 
         <div className="container-homepage">
             <div className='container-desk-user-recomendaciones'>
@@ -37,7 +49,7 @@ function URDesk() {
                     <img className="icon-alumn-desk" src={iconUser}/>
                     <div className='container-text-user-desk'>
                         <div className='name-conectar-desk'>
-                            <LabelGeneral msg="Christian Rome"/>
+                            <LabelGeneral msg={user.user.usuario}/>
                             <figure className="circulo"/>
                         </div>
                         <div>

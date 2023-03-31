@@ -8,10 +8,21 @@ import regresar from '../../../assets/img/icons/regresar.png'
 import iconUser from '../../../assets/img/icons/user.png'
 import "../../../assets/styles/Configuracion/FromConfiguracionProf.css";
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import {useSelector} from 'react-redux';
 function FromConfiguracionUsuario() {
-    const lavr=(e)=>{
-        e.preventDefault();
-    }
+    const user = useSelector(state => state.user)
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+          const response = await fetch("http://34.205.213.60/profesor/getAll");
+          const result = await response.json();
+          setData(result);
+        }
+        fetchData();
+      }, []);
+
     return ( 
         <from>
             <div className='container-config-user-desk'>
@@ -23,7 +34,7 @@ function FromConfiguracionUsuario() {
                             <img src={iconUser} className="foto" alt="foto de perfil" />
                         </div>
                         <div className='container-name-typ'>
-                            <div><Label  msn="Christian Romeo"/> </div>
+                            <div><Label  msn={user.user.usuario}/> </div>
                             <div><Label  msn="Alumno"/></div>
                         </div>
                     </div>
@@ -31,14 +42,14 @@ function FromConfiguracionUsuario() {
                         <ConfigDatosDeskGen 
                             description="Datos de la cuenta"
                             field1="Correo" 
-                            write1="christian@gmail.com"
+                            write1={user.user.email}
                             field2="Contraseña"
                             write2="*********"/>
 
                         <ConfigDatosDesk2 
                             description="Datos personales"
-                            field1="Nombre y apellido" 
-                            write1="Christian Cruz Ramirez"
+                            field1="Nombre " 
+                            write1={user.user.usuario}
                         />            
                     </div>
                     <div className='content-button-salir'>

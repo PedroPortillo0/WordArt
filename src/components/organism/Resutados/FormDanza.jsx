@@ -7,6 +7,7 @@ import Button from '../../atoms/ButtonLogin';
 import Hiphop from '../../../assets/img/Danza/Hiphop.png';
 import Salsa from '../../../assets/img/Danza/Salsa.png';
 import Danza from '../../../assets/img/Danza/Danza.png';
+import { Link } from 'react-router-dom';
 const StyledContainer = styled.div` //padre listo
 width:100%;
 height:100vh;
@@ -154,9 +155,10 @@ function FormDanza() {
                 <DivHijo1>
                     <div className='hijo1-1'>
                         <div className='ContainerImagen'>
-                            <a href="/homepage">
-                                <img className='imagen' src={Retroceder} alt="regresar" Link='/homepage'/>
-                            </a>
+                            <Link to={"/homepage"}>
+                            <img className='imagen' src={Retroceder} alt="regresar" Link='/homepage'/>
+                            </Link>
+
                         </div>
                         <div className='ContainerResult'>
                             <div>
@@ -244,7 +246,10 @@ function FormDanza() {
                                         <LabelGeneral className="labelGeneral" msg="400 MX$"/>
                                     </div>
                                     <div className='buttun'>
+                                        
                                         <Button className='button' msg={"ir"}/>
+                                        
+                                        
                                     </div>
                                 </DivIr>
 

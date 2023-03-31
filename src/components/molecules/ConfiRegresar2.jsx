@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-function ConfigRegresar({src, msg}) {
+function ConfigRegresar2({src, msg}) {
     return ( 
         <div className='header-administracion-cuenta'>
-            <Link to="/homepage">
+            <Link to="/menuProfesores">
                 <div><img src={src}/></div></Link>
             <div>
                 {msg}
@@ -12,4 +12,4 @@ function ConfigRegresar({src, msg}) {
      );
 }
 
-export default ConfigRegresar;
+export default ConfigRegresar2;

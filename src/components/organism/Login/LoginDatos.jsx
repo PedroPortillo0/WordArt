@@ -56,7 +56,7 @@ function LoginDatos() {
                     text: `Bienvenido `,
                     icon: 'success',
                 })
-                navigate("/Homepage");
+                navigate("/homepage");
             } else {
     
               Swal({
@@ -81,7 +81,7 @@ function LoginDatos() {
                     <label className="subtitulo">Ingresa tus datos a continuación</label>
                 </div>
                 <div className='content-form'>
-                    <form id='formulario' ref={Form} >
+                    <form ref={Form} >
                         <WrapperlInput msn="Email:" name={"email"} type="email" placeholder="user@gmail.com"/>
                         <WrapperlInput msn="Password:" name={"contraseña"}  type="password" placeholder="********"/>
                         

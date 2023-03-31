@@ -1,7 +1,7 @@
 import Separador from '../../atoms/Separador';
 import Label from '../../atoms/LabelLogin';
 import ButtonSalir from '../../atoms/ButtonSalir'
-import ConfigRegresar from '../../molecules/ConfigRegresar'
+import ConfiRegresar2 from '../../molecules/ConfiRegresar2'
 import ConfigDatosDeskGen from '../../molecules/ConfigDatosDeskGen';
 import regresar from '../../../assets/img/icons/regresar.png'
 import iconUser from '../../../assets/img/icons/user.png'
@@ -24,33 +24,11 @@ function FromConfiguracionProf() {
         fetchData();
       }, []);
 
-    //   function validarUsuario(register,gmailP, contraseñaP) {
-    //     let user = null;
-    //     let flag = false;
-    //     for (let i = 0; i < register.length && !flag; i++) {
-    //       if (register[i].gmailP === gmailP && register[i].contraseñaP === contraseñaP) {
-    //         user = register[i]
-    //         flag = true;
-    //       }
-    //     }
-    //     return user;
-    //   }
-    // function xd(){
-    //     let user=null;
-    //     let flag=false;
-    //     for(let i=0;i<data.length && !flag; i++){
-    //         if(data[i].gmailP===profe){
-    //             user=data[i]
-    //             flag=true;
-    //         }
-    //     }
-    //     return user;
-    // }
 
     return ( 
         <from>
             <div className='container-config-user-desk'>
-                <ConfigRegresar src={regresar} msg="Ajustes"/>
+                <ConfiRegresar2 src={regresar} msg="Ajustes"/>
                 <Separador/>
                 <div className='container-information-config-desk'>
                     
@@ -60,9 +38,7 @@ function FromConfiguracionProf() {
                         </div>
                         <div className='container-name-typ'>
                             <div>                    
-                                    <Label  msn={user.user.nombreP   }/>
-                                    <br></br>
-                                    <Label  msn={user.user.telefonoP  }/>
+                                    <Label  msn={user.user.nombreP}/>
                             </div>
                             <div><Label  msn="Profesor"/></div>
                           
@@ -79,7 +55,7 @@ function FromConfiguracionProf() {
                         <ConfigDatosDeskGen 
                             description="Datos personales"
                             field1="Nombre y apellido" 
-                            write1={user.user.nombreP}
+                            write1={user.user.nombreP }
                             field2="Telefono"
                             write2={user.user.telefonoP}/>            
                     </div>

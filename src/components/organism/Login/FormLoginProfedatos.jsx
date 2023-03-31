@@ -56,7 +56,7 @@ function FormLoginProfeDatos() {
                     text: `Bienvenido `,
                     icon: 'success',
                 })
-                navigate("/Homepage");
+                navigate("/menuProfesores");
             } else {
     
               Swal({

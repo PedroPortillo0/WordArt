@@ -1,0 +1,115 @@
+.MethPago{
+    display: flex;
+    height: 100vh;
+}
+.container-ingresar-datos{
+    background-color: white;
+    width: 130%;
+    padding: 30px;
+}
+.content-ingresar-datos {
+    margin-top: 5%;
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-family: sans-serif;
+    height: 70vh;
+}
+.container-ingresar-datos h3{
+    margin-top: 4%;
+}
+.container-ingresar-datos *{
+    font-family: sans-serif;
+}
+.container-ingresar-datos .container-paypal{
+    width: 13%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .6em;
+    box-shadow: 0px 4px 20px rgba(2, 10, 81, 0.25);
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.container-ingresar-datos .container-paypal img{
+    width: 100%;
+}
+.container-ingresar-datos .datos h2{
+    color: rgb(0, 0, 107);
+    font-weight: 700;
+    font-size: 25px;
+}
+.title-campo{
+    color: rgb(0, 0, 107);
+    font-weight: 600;
+}
+.ingresar-datos .input{
+    border: none;
+    padding: 12px 20px;
+    background-color: #ECECEC;
+}
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.container-date{
+    width: 45%;
+}
+.container-cvv{
+    width: 45%;
+}
+
+
+
+.container-resumen{
+    background: #ECECEC;
+    padding: 30px;
+    width: 100%;
+}
+.content-logo{
+    padding: 30px 20px;
+    width: 100%;
+    text-align: right;
+    margin-left: -10%;
+}
+.container-resumen-2 h2{
+    font-family: sans-serif;
+    font-size: 27px;
+}
+.content-precio{
+    border-bottom: 2px solid rgba(159, 159, 159, 0.654);
+    font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.content-precio .label1{
+    margin-right: 40%;
+}
+.content-terminos{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 12px;
+    font-family: sans-serif
+}
+.content-terminos span{
+    color: #30BFCE;
+    font-size: 12px;
+}
+
+.content-pagar-ahora{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-pagar-ahora button{
+    background: linear-gradient(90.78deg, #30BFCE 0%, rgba(48, 191, 206, 0.58) 100%);
+    width: 50%;
+    border: none;
+    border-radius: 2em;
+    padding: 15px;
+}

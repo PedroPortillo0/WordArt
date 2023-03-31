@@ -29,7 +29,64 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 20px 20px;
+}
+.header-content-HP img{
+    width: 10%;
+}
+.abrir-menu{
+    font-size: 1.5em;
+    border: 0;
+    background-color: transparent;
+    transition: 1s;
+}
+.abrir-menu:hover{
+    transform: rotate(85deg);
+}
+.cerrar-menu{
+    font-size: 1.5em;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+}
+.cerrar-menu:hover{
+    transform: rotate(45deg);
+}
+.nav{
+    opacity: 0;
+    visibility: hidden;
 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60%;
+    background: #161616;
+    padding: 3rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    border-radius: 0 0 0 20px;
+    transition: 1s;
+    margin-right: -14%;
+}
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+    margin-right: 0;
+}
+.nav-list{
+    list-style-type: none;
+    flex-direction: column;
+    align-items: end;
+}
+.nav-list li{
+    margin: 1rem 0;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
 }
 
 .settingsHP{

@@ -54,7 +54,7 @@ function LoginDesk() {
                     text: `Bienvenido `,
                     icon: 'success',
                 })
-                navigate("/Homepage");
+                navigate("/homepage");
             } else {
     
               Swal({

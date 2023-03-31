@@ -7,6 +7,7 @@ import Button from '../../atoms/ButtonLogin';
 import Oleo from '../../../assets/img/Pintura/Oleo.png';
 import Dibujo from '../../../assets/img/Pintura/Dibujo.png';
 import Colores from '../../../assets/img/Pintura/Colores.png';
+import { Link } from 'react-router-dom';
 
 const StyledContainer = styled.div` //padre listo
 width:100%;
@@ -155,9 +156,9 @@ function FormPintura() {
                 <DivHijo1>
                     <div className='hijo1-1'>
                         <div className='ContainerImagen'>
-                            <a href="/homepage">
+                            <Link to={"/homepage"}>
                                 <img className='imagen' src={Retroceder} alt="regresar" />
-                            </a>
+                            </Link>
                         </div>
                         <div className='ContainerResult'>
                             <div>
@@ -245,7 +246,9 @@ function FormPintura() {
                                         <LabelGeneral className="labelGeneral" msg="800 MX$"/>
                                     </div>
                                     <div className='buttun'>
+                                        
                                         <Button className='button' msg={"ir"}/>
+                                        
                                     </div>
                                 </DivIr>
 

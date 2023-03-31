@@ -11,8 +11,21 @@ import bursts from '../../../assets/img/icons/bursts.png'
 import cash from '../../../assets/img/icons/cash.png'
 import '../../../assets/styles/MenuProfesor/MenuProfesor.css'
 import { Link } from 'react-router-dom';
-
+import { useEffect, useState } from "react";
+import {useSelector} from 'react-redux';
 function MenuProfesorDesk() {
+    const user = useSelector(state => state.user)
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+          const response = await fetch("http://34.205.213.60/profesor/getAll");
+          const result = await response.json();
+          setData(result);
+        }
+        fetchData();
+      }, []);
+
     return ( 
         <div className="container-menu-profesor-desk">
             <div className='container-todo'>
@@ -22,7 +35,7 @@ function MenuProfesorDesk() {
                     </div>
                     <div className='text-profile'>
                         <div className='name'>
-                            <h2>Name</h2>
+                            <h2>{user.user.nombreP}</h2>
                             <img src={onnline}/>
                         </div>
                         <div className='type'>
